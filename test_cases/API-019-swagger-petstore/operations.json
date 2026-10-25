@@ -1,0 +1,199 @@
+[
+  {
+    "method": "PUT",
+    "path": "/pet",
+    "operation_id": "updatePet",
+    "declared_statuses": [
+      "200",
+      "400",
+      "404",
+      "422",
+      "default"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/pet",
+    "operation_id": "addPet",
+    "declared_statuses": [
+      "200",
+      "400",
+      "422",
+      "default"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/pet/findByStatus",
+    "operation_id": "findPetsByStatus",
+    "declared_statuses": [
+      "200",
+      "400",
+      "default"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/pet/findByTags",
+    "operation_id": "findPetsByTags",
+    "declared_statuses": [
+      "200",
+      "400",
+      "default"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/pet/{petId}",
+    "operation_id": "getPetById",
+    "declared_statuses": [
+      "200",
+      "400",
+      "404",
+      "default"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/pet/{petId}",
+    "operation_id": "updatePetWithForm",
+    "declared_statuses": [
+      "200",
+      "400",
+      "default"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/pet/{petId}",
+    "operation_id": "deletePet",
+    "declared_statuses": [
+      "200",
+      "400",
+      "default"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/pet/{petId}/uploadImage",
+    "operation_id": "uploadFile",
+    "declared_statuses": [
+      "200",
+      "400",
+      "404",
+      "default"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/store/inventory",
+    "operation_id": "getInventory",
+    "declared_statuses": [
+      "200",
+      "default"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/store/order",
+    "operation_id": "placeOrder",
+    "declared_statuses": [
+      "200",
+      "400",
+      "422",
+      "default"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/store/order/{orderId}",
+    "operation_id": "getOrderById",
+    "declared_statuses": [
+      "200",
+      "400",
+      "404",
+      "default"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/store/order/{orderId}",
+    "operation_id": "deleteOrder",
+    "declared_statuses": [
+      "200",
+      "400",
+      "404",
+      "default"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/user",
+    "operation_id": "createUser",
+    "declared_statuses": [
+      "200",
+      "default"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/user/createWithList",
+    "operation_id": "createUsersWithListInput",
+    "declared_statuses": [
+      "200",
+      "default"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/user/login",
+    "operation_id": "loginUser",
+    "declared_statuses": [
+      "200",
+      "400",
+      "default"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/user/logout",
+    "operation_id": "logoutUser",
+    "declared_statuses": [
+      "200",
+      "default"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/user/{username}",
+    "operation_id": "getUserByName",
+    "declared_statuses": [
+      "200",
+      "400",
+      "404",
+      "default"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/user/{username}",
+    "operation_id": "updateUser",
+    "declared_statuses": [
+      "200",
+      "400",
+      "404",
+      "default"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/user/{username}",
+    "operation_id": "deleteUser",
+    "declared_statuses": [
+      "200",
+      "400",
+      "404",
+      "default"
+    ]
+  }
+]

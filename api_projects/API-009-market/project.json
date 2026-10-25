@@ -1,0 +1,32 @@
+{
+  "project_id": "API-009-market",
+  "name": "Market",
+  "slug": "market",
+  "source_url": "https://github.com/aleksey-lukyanets/market",
+  "source_collection": "https://github.com/WebFuzzing/Dataset",
+  "collection_commit": "915859080da033fc36feae54bab3ad4a7b04e872",
+  "source_path": "sources/WFD/jdk_11_maven/cs/rest-gui/market",
+  "source_file_count": 124,
+  "declared_license": "MIT",
+  "license_basis": "WFD README; preserved upstream notices; not a legal review",
+  "license_files": [
+    "sources/WFD/jdk_11_maven/cs/rest-gui/market/LICENSE"
+  ],
+  "language": "Java",
+  "runtime": "JDK 11",
+  "build_tool": "Maven",
+  "database": "H2",
+  "authentication_declared": "TRUE",
+  "http_port": 8109,
+  "auth_port": 9109,
+  "schema_endpoint_candidates": [
+    "/v2/api-docs"
+  ],
+  "raw_spec_sha256": "cf51a9d511b970fd51bce1206eb9429024c11eb180ada58b43193bcb5883c3cd",
+  "raw_spec_version": "2.0",
+  "operation_count": 13,
+  "jar_source": "cs/rest-gui/market/market-rest/target/market-sut.jar",
+  "status": "imported_not_runtime_verified",
+  "raw_spec_hash_normalization": "CRLF to LF; otherwise original bytes",
+  "license_evidence_status": "source_notice_present"
+}

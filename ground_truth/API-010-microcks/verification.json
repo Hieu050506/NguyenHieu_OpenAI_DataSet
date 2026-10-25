@@ -1,0 +1,5 @@
+{
+  "status": "not_verified",
+  "reason": "Requires runtime comparison and full test cases; upstream spec is not verified Ground Truth",
+  "collection_commit": "915859080da033fc36feae54bab3ad4a7b04e872"
+}

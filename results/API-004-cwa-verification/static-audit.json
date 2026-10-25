@@ -1,0 +1,15 @@
+{
+  "project_id": "API-004-cwa-verification",
+  "checked_at_utc": "2026-10-25T17:35:01.690519+00:00",
+  "source_integrity": "pass",
+  "integrity_errors": [],
+  "raw_spec_sha256": "24e000dd26121ac25f6f177e3e6062797cd63347737eb24d5d53e1d139c77a83",
+  "spec_structure": "invalid",
+  "spec_error": {
+    "type": "OpenAPIValidationError",
+    "message": "{'type': 'object', 'properties': {'key': {'type': 'string'}, 'keyDob': {'type': 'string', 'required': False, 'description': \"Only used in conjunction with keyType == GUID. The hashed GUID consists of concat('x', substring(sha256_hex(concat(test-id-uuid, DateOfBirth.format(DDMMYYYY))), 1) - e.g. concat('x', substring(sha256_hex('7bb41672-7de4-44c3-b751-4258e59f3e2508051992')), 1)) --> x3712193bd35d40f03ee497ea7e4ea8278d8fcc8a2287843bb0ab36939d222b4\"}, 'keyType': {'type': 'string', 'enum': ['GUID', 'TELETAN']}}, 'description': 'The registration token request model.'} is not valid under any of the given schemas\n\nFailed validating 'oneOf' in schema['properties']['components']['properties']['schemas']['patternProperties']['^[a-zA-Z0-9\\\\.\\\\-_]+$']:\n    {'oneOf': [{'$ref': '#/definitions/Schema'},\n               {'$ref': '#/definitions/Reference'}]}\n\nOn instance['components']['schemas']['RegistrationTokenRequest']:\n    {'type': 'object',\n     'properties': {'key': {'type': 'string'},\n                    'keyDob': {'type': 'string',\n                               'required': False,\n                               'description': 'Only used in conjunction '\n                                              'with keyType == GUID. The '\n                                              'hashed GUID consists of '\n                                              \"concat('x', \"\n                                              'substring(sha256_hex(concat(test-id-uuid, '\n                                              'DateOfBirth.format(DDMMYYYY))), '\n                                              \"1) - e.g. concat('x', \"\n                                              \"substring(sha256_hex('7bb41672-7de4-44c3-b751-4258e59f3e2508051992')), \"\n                                              '1)) --> '\n                                              'x3712193bd35d40f03ee497ea7e4ea8278d8fcc8a2287843bb0ab36939d222b4'},\n                    'keyType': {'type': 'string',\n                                'enum': ['GUID', 'TELETAN']}},\n     'description': 'The registration token request model.'}"
+  },
+  "operation_count": 5,
+  "runtime": "not_verified",
+  "warning": "Static checks are not HTTP execution or verified Ground Truth."
+}

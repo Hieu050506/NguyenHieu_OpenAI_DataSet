@@ -1,0 +1,15 @@
+{
+  "project_id": "API-006-features-service",
+  "checked_at_utc": "2026-10-25T17:35:02.743227+00:00",
+  "source_integrity": "pass",
+  "integrity_errors": [],
+  "raw_spec_sha256": "a496b74c1d421a8f4657d449a082e00941b42702ddf23ebfaaf3a0ca66395508",
+  "spec_structure": "invalid",
+  "spec_error": {
+    "type": "OpenAPIValidationError",
+    "message": "'title' is a required property\n\nFailed validating 'required' in schema['properties']['info']:\n    {'type': 'object',\n     'description': 'General information about the API.',\n     'required': ['version', 'title'],\n     'additionalProperties': False,\n     'patternProperties': {'^x-': {'$ref': '#/definitions/vendorExtension'}},\n     'properties': {'title': {'type': 'string',\n                              'description': 'A unique and precise title '\n                                             'of the API.'},\n                    'version': {'type': 'string',\n                                'description': 'A semantic version number '\n                                               'of the API.'},\n                    'description': {'type': 'string',\n                                    'description': 'A longer description '\n                                                   'of the API. Should be '\n                                                   'different from the '\n                                                   'title.  GitHub '\n                                                   'Flavored Markdown is '\n                                                   'allowed.'},\n                    'termsOfService': {'type': 'string',\n                                       'description': 'The terms of '\n                                                      'service for the '\n                                                      'API.'},\n                    'contact': {'$ref': '#/definitions/contact'},\n                    'license': {'$ref': '#/definitions/license'}}}\n\nOn instance['info']:\n    {'version': '1.0'}"
+  },
+  "operation_count": 18,
+  "runtime": "not_verified",
+  "warning": "Static checks are not HTTP execution or verified Ground Truth."
+}

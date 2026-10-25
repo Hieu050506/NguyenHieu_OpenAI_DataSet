@@ -1,0 +1,42 @@
+[
+  {
+    "method": "GET",
+    "path": "/jobs/{jobName}",
+    "operation_id": "get",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/jobs",
+    "operation_id": "all",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/jobExecutions/{id}",
+    "operation_id": "get_1",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/jobExecutions",
+    "operation_id": "all_1",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/jobExecutions",
+    "operation_id": "put",
+    "declared_statuses": [
+      "200"
+    ]
+  }
+]

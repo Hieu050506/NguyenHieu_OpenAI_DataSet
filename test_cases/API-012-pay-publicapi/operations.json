@@ -1,0 +1,203 @@
+[
+  {
+    "method": "GET",
+    "path": "/v1/agreements",
+    "operation_id": "Search agreements",
+    "declared_statuses": [
+      "200",
+      "401",
+      "404",
+      "422",
+      "429",
+      "500"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/v1/agreements",
+    "operation_id": "Create an agreement",
+    "declared_statuses": [
+      "201",
+      "400",
+      "401",
+      "422",
+      "429",
+      "500"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/agreements/{agreementId}",
+    "operation_id": "Get an agreement",
+    "declared_statuses": [
+      "200",
+      "401",
+      "404",
+      "429",
+      "500"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/v1/agreements/{agreementId}/cancel",
+    "operation_id": "Cancel an agreement",
+    "declared_statuses": [
+      "204",
+      "400",
+      "401",
+      "404",
+      "429",
+      "500"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/v1/auth",
+    "operation_id": "Authorise a MOTO payment",
+    "declared_statuses": [
+      "204",
+      "400",
+      "402",
+      "422",
+      "500"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/disputes",
+    "operation_id": "Search disputes",
+    "declared_statuses": [
+      "200",
+      "401",
+      "422",
+      "429",
+      "500"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/payments",
+    "operation_id": "Search payments",
+    "declared_statuses": [
+      "200",
+      "401",
+      "422",
+      "429",
+      "500"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/v1/payments",
+    "operation_id": "Create a payment",
+    "declared_statuses": [
+      "201",
+      "400",
+      "401",
+      "422",
+      "429",
+      "500"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/payments/{paymentId}",
+    "operation_id": "Get a payment",
+    "declared_statuses": [
+      "200",
+      "401",
+      "404",
+      "429",
+      "500"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/v1/payments/{paymentId}/cancel",
+    "operation_id": "Cancel a payment",
+    "declared_statuses": [
+      "204",
+      "400",
+      "401",
+      "404",
+      "409",
+      "429",
+      "500"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/v1/payments/{paymentId}/capture",
+    "operation_id": "Capture a payment",
+    "declared_statuses": [
+      "204",
+      "400",
+      "401",
+      "404",
+      "409",
+      "429",
+      "500"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/payments/{paymentId}/events",
+    "operation_id": "Get events for a payment",
+    "declared_statuses": [
+      "200",
+      "401",
+      "404",
+      "429",
+      "500"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/payments/{paymentId}/refunds",
+    "operation_id": "Get all refunds for a payment",
+    "declared_statuses": [
+      "200",
+      "401",
+      "404",
+      "429",
+      "500"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/v1/payments/{paymentId}/refunds",
+    "operation_id": "Submit a refund for a payment",
+    "declared_statuses": [
+      "200",
+      "202",
+      "401",
+      "404",
+      "412",
+      "429",
+      "500"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/payments/{paymentId}/refunds/{refundId}",
+    "operation_id": "Get a payment refund",
+    "declared_statuses": [
+      "200",
+      "401",
+      "404",
+      "429",
+      "500"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/refunds",
+    "operation_id": "Search refunds",
+    "declared_statuses": [
+      "200",
+      "401",
+      "422",
+      "500"
+    ]
+  }
+]

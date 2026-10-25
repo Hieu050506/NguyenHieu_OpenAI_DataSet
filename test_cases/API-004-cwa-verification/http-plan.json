@@ -1,0 +1,6 @@
+{
+  "status": "draft_from_unverified_spec",
+  "project_id": "API-004-cwa-verification",
+  "description": "Read-only local smoke candidates, not a complete CRUD or ground-truth test suite. Authenticated routes require explicit test credentials.",
+  "cases": []
+}

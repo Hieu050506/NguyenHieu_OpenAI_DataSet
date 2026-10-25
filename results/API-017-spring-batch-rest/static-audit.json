@@ -1,0 +1,12 @@
+{
+  "project_id": "API-017-spring-batch-rest",
+  "checked_at_utc": "2026-10-25T17:35:07.463244+00:00",
+  "source_integrity": "pass",
+  "integrity_errors": [],
+  "raw_spec_sha256": "e6386f1f9d9f7d23299e961b51ed0f29e3297a0c1578632b20e31e3678b0e709",
+  "spec_structure": "valid",
+  "spec_error": null,
+  "operation_count": 5,
+  "runtime": "not_verified",
+  "warning": "Static checks are not HTTP execution or verified Ground Truth."
+}

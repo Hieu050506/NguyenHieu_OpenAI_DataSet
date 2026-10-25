@@ -1,0 +1,15 @@
+{
+  "project_id": "API-016-scout-api",
+  "checked_at_utc": "2026-10-25T17:35:07.336667+00:00",
+  "source_integrity": "pass",
+  "integrity_errors": [],
+  "raw_spec_sha256": "c8a539fcd9b9beb41f7943a83de192688718be725d24511613ed606e3f6c6b08",
+  "spec_structure": "invalid",
+  "spec_error": {
+    "type": "DuplicateOperationIDError",
+    "message": "Operation ID 'get' for 'get' in '/v1/media_files/{id}' is not unique"
+  },
+  "operation_count": 49,
+  "runtime": "not_verified",
+  "warning": "Static checks are not HTTP execution or verified Ground Truth."
+}

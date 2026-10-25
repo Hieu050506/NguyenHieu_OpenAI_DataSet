@@ -1,0 +1,2210 @@
+[
+  {
+    "method": "GET",
+    "path": "/api/averageAwardPeriod",
+    "operation_id": "averageAwardPeriodUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/averageAwardPeriod",
+    "operation_id": "averageAwardPeriodUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/averageNumberOfTenderers",
+    "operation_id": "averageNumberOfTenderersUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/averageNumberOfTenderers",
+    "operation_id": "averageNumberOfTenderersUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/averageTenderPeriod",
+    "operation_id": "averageTenderPeriodUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/averageTenderPeriod",
+    "operation_id": "averageTenderPeriodUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/avgTimeFromPlanToTenderPhase",
+    "operation_id": "avgTimeFromPlanToTenderPhaseUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/avgTimeFromPlanToTenderPhase",
+    "operation_id": "avgTimeFromPlanToTenderPhaseUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/awardValueInterval",
+    "operation_id": "awardValueIntervalUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/awardValueInterval",
+    "operation_id": "awardValueIntervalUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/costEffectivenessAwardAmount",
+    "operation_id": "costEffectivenessAwardAmountUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/costEffectivenessAwardAmount",
+    "operation_id": "costEffectivenessAwardAmountUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/costEffectivenessTenderAmount",
+    "operation_id": "costEffectivenessTenderAmountUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/costEffectivenessTenderAmount",
+    "operation_id": "costEffectivenessTenderAmountUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/costEffectivenessTenderAwardAmount",
+    "operation_id": "costEffectivenessTenderAwardAmountUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/costEffectivenessTenderAwardAmount",
+    "operation_id": "costEffectivenessTenderAwardAmountUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/countAwardsByYear",
+    "operation_id": "countAwardsByYearUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/countAwardsByYear",
+    "operation_id": "countAwardsByYearUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/countBidPlansByYear",
+    "operation_id": "countBidPlansByYearUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/countBidPlansByYear",
+    "operation_id": "countBidPlansByYearUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/countTendersByYear",
+    "operation_id": "countTendersByYearUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/countTendersByYear",
+    "operation_id": "countTendersByYearUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/flags/i003/releases",
+    "operation_id": "releaseFlagSearchUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/flags/i003/releases",
+    "operation_id": "releaseFlagSearchUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/flags/i003/stats",
+    "operation_id": "flagStatsUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/flags/i003/stats",
+    "operation_id": "flagStatsUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/flags/i004/releases",
+    "operation_id": "releaseFlagSearchUsingGET_1",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/flags/i004/releases",
+    "operation_id": "releaseFlagSearchUsingPOST_1",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/flags/i004/stats",
+    "operation_id": "flagStatsUsingGET_1",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/flags/i004/stats",
+    "operation_id": "flagStatsUsingPOST_1",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/flags/i007/releases",
+    "operation_id": "releaseFlagSearchUsingGET_2",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/flags/i007/releases",
+    "operation_id": "releaseFlagSearchUsingPOST_2",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/flags/i007/stats",
+    "operation_id": "flagStatsUsingGET_2",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/flags/i007/stats",
+    "operation_id": "flagStatsUsingPOST_2",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/flags/i019/releases",
+    "operation_id": "releaseFlagSearchUsingGET_3",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/flags/i019/releases",
+    "operation_id": "releaseFlagSearchUsingPOST_3",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/flags/i019/stats",
+    "operation_id": "flagStatsUsingGET_3",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/flags/i019/stats",
+    "operation_id": "flagStatsUsingPOST_3",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/flags/i038/releases",
+    "operation_id": "releaseFlagSearchUsingGET_4",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/flags/i038/releases",
+    "operation_id": "releaseFlagSearchUsingPOST_4",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/flags/i038/stats",
+    "operation_id": "flagStatsUsingGET_4",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/flags/i038/stats",
+    "operation_id": "flagStatsUsingPOST_4",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/flags/i077/releases",
+    "operation_id": "releaseFlagSearchUsingGET_5",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/flags/i077/releases",
+    "operation_id": "releaseFlagSearchUsingPOST_5",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/flags/i077/stats",
+    "operation_id": "flagStatsUsingGET_5",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/flags/i077/stats",
+    "operation_id": "flagStatsUsingPOST_5",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/flags/i180/releases",
+    "operation_id": "releaseFlagSearchUsingGET_6",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/flags/i180/releases",
+    "operation_id": "releaseFlagSearchUsingPOST_6",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/flags/i180/stats",
+    "operation_id": "flagStatsUsingGET_6",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/flags/i180/stats",
+    "operation_id": "flagStatsUsingPOST_6",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/frequentSuppliersTimeInterval",
+    "operation_id": "frequentSuppliersTimeIntervalUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/frequentSuppliersTimeInterval",
+    "operation_id": "frequentSuppliersTimeIntervalUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/frequentTenderers",
+    "operation_id": "frequentTenderersUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/frequentTenderers",
+    "operation_id": "frequentTenderersUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/fundingByTenderDeliveryLocation",
+    "operation_id": "fundingByTenderDeliveryLocationUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/fundingByTenderDeliveryLocation",
+    "operation_id": "fundingByTenderDeliveryLocationUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/averageNumberBidsExcelChart",
+    "operation_id": "averageNumberBidsExcelChartUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/averageNumberBidsExcelChart",
+    "operation_id": "averageNumberBidsExcelChartUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/bidSelectionExcelChart",
+    "operation_id": "bidSelectionExcelChartUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/bidSelectionExcelChart",
+    "operation_id": "bidSelectionExcelChartUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/bidSelectionMethod/all",
+    "operation_id": "bidSelectionMethodsUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/bidSelectionMethod/all",
+    "operation_id": "bidSelectionMethodsUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/bidTimelineExcelChart",
+    "operation_id": "bidTimelineExcelChartUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/bidTimelineExcelChart",
+    "operation_id": "bidTimelineExcelChartUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/bidType/all",
+    "operation_id": "bidTypesUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/bidType/all",
+    "operation_id": "bidTypesUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/cancelledFundingExcelChart",
+    "operation_id": "cancelledFundingExcelChartUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/cancelledFundingExcelChart",
+    "operation_id": "cancelledFundingExcelChartUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/cancelledFundingPercentageExcelChart",
+    "operation_id": "cancelledFundingPercentageExcelChartUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/cancelledFundingPercentageExcelChart",
+    "operation_id": "cancelledFundingPercentageExcelChartUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/cancelledTendersByYearByRationaleExcelChart",
+    "operation_id": "cancelledTendersByYearByRationaleExcelChartUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/cancelledTendersByYearByRationaleExcelChart",
+    "operation_id": "cancelledTendersByYearByRationaleExcelChartUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/city/all",
+    "operation_id": "orgCitiesUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/city/all",
+    "operation_id": "orgCitiesUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/city/search",
+    "operation_id": "citiesSearchUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/city/search",
+    "operation_id": "citiesSearchUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/contrMethod/all",
+    "operation_id": "contrMethodsUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/contrMethod/all",
+    "operation_id": "contrMethodsUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/costEffectivenessExcelChart",
+    "operation_id": "costEffectivenessExcelChartUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/costEffectivenessExcelChart",
+    "operation_id": "costEffectivenessExcelChartUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/excelExport",
+    "operation_id": "excelExportUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/excelExport",
+    "operation_id": "excelExportUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/location/all",
+    "operation_id": "locationsAllUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/location/all",
+    "operation_id": "locationsAllUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/location/search",
+    "operation_id": "locationsSearchUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/location/search",
+    "operation_id": "locationsSearchUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/numberCancelledFundingExcelChart",
+    "operation_id": "numberCancelledFundingExcelChartUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/numberCancelledFundingExcelChart",
+    "operation_id": "numberCancelledFundingExcelChartUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/numberTendersUsingEBidExcelChart",
+    "operation_id": "numberTendersUsingEBidExcelChartUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/numberTendersUsingEBidExcelChart",
+    "operation_id": "numberTendersUsingEBidExcelChartUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/orgDepartment/all",
+    "operation_id": "orgDepartmentsUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/orgDepartment/all",
+    "operation_id": "orgDepartmentsUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/orgDepartment/search",
+    "operation_id": "departmentSearchUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/orgDepartment/search",
+    "operation_id": "departmentSearchUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/orgGroup/all",
+    "operation_id": "orgGroupsUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/orgGroup/all",
+    "operation_id": "orgGroupsUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/orgGroup/search",
+    "operation_id": "groupsSearchUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/orgGroup/search",
+    "operation_id": "groupsSearchUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/organization/all",
+    "operation_id": "searchTextUsingGET_1",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/organization/all",
+    "operation_id": "searchTextUsingPOST_1",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/organization/buyer/all",
+    "operation_id": "searchTextUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/organization/buyer/all",
+    "operation_id": "searchTextUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/organization/buyer/id/{id}",
+    "operation_id": "byIdUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/organization/buyer/id/{id}",
+    "operation_id": "byIdUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/organization/id/{id}",
+    "operation_id": "byIdUsingGET_1",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/organization/id/{id}",
+    "operation_id": "byIdUsingPOST_1",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/organization/ids",
+    "operation_id": "byIdCollectionUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/organization/ids",
+    "operation_id": "byIdCollectionUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/organization/procuringEntity/all",
+    "operation_id": "searchTextUsingGET_2",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/organization/procuringEntity/all",
+    "operation_id": "searchTextUsingPOST_2",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/organization/procuringEntity/id/{id}",
+    "operation_id": "byIdUsingGET_2",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/organization/procuringEntity/id/{id}",
+    "operation_id": "byIdUsingPOST_2",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/organization/supplier/all",
+    "operation_id": "searchTextUsingGET_3",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/organization/supplier/all",
+    "operation_id": "searchTextUsingPOST_3",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/organization/supplier/id/{id}",
+    "operation_id": "byIdUsingGET_3",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/organization/supplier/id/{id}",
+    "operation_id": "byIdUsingPOST_3",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/package/all",
+    "operation_id": "ocdsPackagesUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/package/all",
+    "operation_id": "ocdsPackagesUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/package/budgetProjectId/{projectId}",
+    "operation_id": "packagedReleaseByProjectIdUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/package/budgetProjectId/{projectId}",
+    "operation_id": "packagedReleaseByProjectIdUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/package/ocid/{ocid}",
+    "operation_id": "ocdsPackageByOcidUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/package/ocid/{ocid}",
+    "operation_id": "ocdsPackageByOcidUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/package/planningBidNo/{bidNo}",
+    "operation_id": "packagedReleaseByPlanningBidNoUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/package/planningBidNo/{bidNo}",
+    "operation_id": "packagedReleaseByPlanningBidNoUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/percentTendersUsingEBidExcelChart",
+    "operation_id": "percentTendersUsingEBidExcelChartUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/percentTendersUsingEBidExcelChart",
+    "operation_id": "percentTendersUsingEBidExcelChartUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/percentTendersUsingEgpExcelChart",
+    "operation_id": "percentTendersUsingEgpExcelChartUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/percentTendersUsingEgpExcelChart",
+    "operation_id": "percentTendersUsingEgpExcelChartUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/procurementActivityExcelChart",
+    "operation_id": "procurementActivityExcelChartUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/procurementActivityExcelChart",
+    "operation_id": "procurementActivityExcelChartUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/procurementMethod/all",
+    "operation_id": "procurementMethodsUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/procurementMethod/all",
+    "operation_id": "procurementMethodsUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/procurementMethodExcelChart",
+    "operation_id": "procurementMethodExcelChartUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/procurementMethodExcelChart",
+    "operation_id": "procurementMethodExcelChartUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/release/all",
+    "operation_id": "ocdsReleasesUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/release/all",
+    "operation_id": "ocdsReleasesUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/release/budgetProjectId/{projectId}",
+    "operation_id": "ocdsByProjectIdUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/release/budgetProjectId/{projectId}",
+    "operation_id": "ocdsByProjectIdUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/release/ocid/{ocid}",
+    "operation_id": "ocdsByOcidUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/release/ocid/{ocid}",
+    "operation_id": "ocdsByOcidUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/release/planningBidNo/{bidNo}",
+    "operation_id": "ocdsByPlanningBidNoUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/release/planningBidNo/{bidNo}",
+    "operation_id": "ocdsByPlanningBidNoUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/tendersByItemExcelChart",
+    "operation_id": "numberOfTendersByItemExcelChartUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/tendersByItemExcelChart",
+    "operation_id": "numberOfTendersByItemExcelChartUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ocds/tendersWithLinkedProcurementPlanExcelChart",
+    "operation_id": "tendersWithLinkedProcurementPlanExcelChartUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ocds/tendersWithLinkedProcurementPlanExcelChart",
+    "operation_id": "tendersWithLinkedProcurementPlanExcelChartUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/percentTendersAwardedWithTwoOrMoreTenderers",
+    "operation_id": "percentTendersAwardedUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/percentTendersAwardedWithTwoOrMoreTenderers",
+    "operation_id": "percentTendersAwardedUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/percentTendersCancelled",
+    "operation_id": "percentTendersCancelledUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/percentTendersCancelled",
+    "operation_id": "percentTendersCancelledUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/percentTendersUsingEBid",
+    "operation_id": "percentTendersUsingEBidUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/percentTendersUsingEBid",
+    "operation_id": "percentTendersUsingEBidUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/percentTendersUsingEgp",
+    "operation_id": "percentTendersUsingEgpUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/percentTendersUsingEgp",
+    "operation_id": "percentTendersUsingEgpUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/percentTendersWithLinkedProcurementPlan",
+    "operation_id": "percentTendersWithLinkedProcurementPlanUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/percentTendersWithLinkedProcurementPlan",
+    "operation_id": "percentTendersWithLinkedProcurementPlanUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/percentTendersWithTwoOrMoreTenderers",
+    "operation_id": "percentTendersWithTwoOrMoreTenderersUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/percentTendersWithTwoOrMoreTenderers",
+    "operation_id": "percentTendersWithTwoOrMoreTenderersUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/percentageAwardsNarrowPublicationDates",
+    "operation_id": "percentageAwardsNarrowPublicationDatesUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/percentageAwardsNarrowPublicationDates",
+    "operation_id": "percentageAwardsNarrowPublicationDatesUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/plannedFundingByLocation",
+    "operation_id": "plannedFundingByLocationUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/plannedFundingByLocation",
+    "operation_id": "plannedFundingByLocationUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/qualityAverageAwardPeriod",
+    "operation_id": "qualityAverageAwardPeriodUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/qualityAverageAwardPeriod",
+    "operation_id": "qualityAverageAwardPeriodUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/qualityAverageTenderPeriod",
+    "operation_id": "qualityAverageTenderPeriodUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/qualityAverageTenderPeriod",
+    "operation_id": "qualityAverageTenderPeriodUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/qualityFundingByTenderDeliveryLocation",
+    "operation_id": "qualityFundingByTenderDeliveryLocationUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/qualityFundingByTenderDeliveryLocation",
+    "operation_id": "qualityFundingByTenderDeliveryLocationUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/qualityPlannedFundingByLocation",
+    "operation_id": "qualityPlannedFundingByLocationUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/qualityPlannedFundingByLocation",
+    "operation_id": "qualityPlannedFundingByLocationUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/tenderPriceByAllBidSelectionMethods",
+    "operation_id": "tenderPriceByAllBidSelectionMethodsUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/tenderPriceByAllBidSelectionMethods",
+    "operation_id": "tenderPriceByAllBidSelectionMethodsUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/tenderPriceByBidSelectionMethod",
+    "operation_id": "tenderPriceByBidSelectionMethodUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/tenderPriceByBidSelectionMethod",
+    "operation_id": "tenderPriceByBidSelectionMethodUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/tenderPriceByProcurementMethod",
+    "operation_id": "tenderPriceByProcurementMethodUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/tenderPriceByProcurementMethod",
+    "operation_id": "tenderPriceByProcurementMethodUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/tenderValueInterval",
+    "operation_id": "tenderValueIntervalUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/tenderValueInterval",
+    "operation_id": "tenderValueIntervalUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/tendersAwardsYears",
+    "operation_id": "tendersAwardsYearsUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/tendersAwardsYears",
+    "operation_id": "tendersAwardsYearsUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/tendersByItemClassification",
+    "operation_id": "tendersByItemClassificationUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/tendersByItemClassification",
+    "operation_id": "tendersByItemClassificationUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/topTenLargestAwards",
+    "operation_id": "topTenLargestAwardsUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/topTenLargestAwards",
+    "operation_id": "topTenLargestAwardsUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/topTenLargestTenders",
+    "operation_id": "topTenLargestTendersUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/topTenLargestTenders",
+    "operation_id": "topTenLargestTendersUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/topTenSuppliers",
+    "operation_id": "topTenLargestSuppliersUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/topTenSuppliers",
+    "operation_id": "topTenLargestSuppliersUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/totalCancelledTendersByYear",
+    "operation_id": "totalCancelledTendersByYearUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/totalCancelledTendersByYear",
+    "operation_id": "totalCancelledTendersByYearUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/totalCancelledTendersByYearByRationale",
+    "operation_id": "totalCancelledTendersByYearByRationaleUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/totalCancelledTendersByYearByRationale",
+    "operation_id": "totalCancelledTendersByYearByRationaleUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  }
+]

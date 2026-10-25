@@ -1,0 +1,5 @@
+{
+  "status": "not_run",
+  "reason": "Docker CLI/daemon unavailable on import machine",
+  "http_tests_executed": 0
+}

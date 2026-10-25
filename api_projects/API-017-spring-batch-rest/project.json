@@ -1,0 +1,32 @@
+{
+  "project_id": "API-017-spring-batch-rest",
+  "name": "Spring-batch-rest",
+  "slug": "spring-batch-rest",
+  "source_url": "https://github.com/chrisgleissner/spring-batch-rest",
+  "source_collection": "https://github.com/WebFuzzing/Dataset",
+  "collection_commit": "915859080da033fc36feae54bab3ad4a7b04e872",
+  "source_path": "sources/WFD/jdk_8_maven/cs/rest/original/spring-batch-rest",
+  "source_file_count": 65,
+  "declared_license": "Apache",
+  "license_basis": "WFD README; preserved upstream notices; not a legal review",
+  "license_files": [
+    "sources/WFD/jdk_8_maven/cs/rest/original/spring-batch-rest/LICENSE"
+  ],
+  "language": "Java",
+  "runtime": "JDK 8",
+  "build_tool": "Maven",
+  "database": "",
+  "authentication_declared": "FALSE",
+  "http_port": 8117,
+  "auth_port": 9117,
+  "schema_endpoint_candidates": [
+    "/v3/api-docs"
+  ],
+  "raw_spec_sha256": "e6386f1f9d9f7d23299e961b51ed0f29e3297a0c1578632b20e31e3678b0e709",
+  "raw_spec_version": "3.0.1",
+  "operation_count": 5,
+  "jar_source": "cs/rest/original/spring-batch-rest/example/api/target/spring-batch-rest-sut.jar",
+  "status": "imported_not_runtime_verified",
+  "raw_spec_hash_normalization": "CRLF to LF; otherwise original bytes",
+  "license_evidence_status": "source_notice_present"
+}

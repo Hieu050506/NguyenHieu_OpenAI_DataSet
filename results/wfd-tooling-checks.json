@@ -1,0 +1,21 @@
+{
+  "checked_at_utc": "2026-10-25T17:38:04.282340+00:00",
+  "scope": "Dataset management scripts only; fixture HTTP is not WFD API execution",
+  "compose_files_schema_valid": 38,
+  "compose_schema_source": "https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json",
+  "compose_schema_sha256": "d549057ebc2925f39f62799eab0db7b9e2c18b35b6c00595199116da3ed10e64",
+  "checks_passed": [
+    "19 source projects have code and explicit license provenance; absent notice files flagged for review",
+    "38 Compose files validate against Compose schema",
+    "newline portable hashing and content tamper detection",
+    "smoke records real response and does not mark ground truth verified",
+    "failed/empty/skipped smoke tests cannot pass",
+    "external-host request path rejected"
+  ],
+  "license_notice_files_present": 17,
+  "license_review_required": [
+    "API-006-features-service",
+    "API-016-scout-api"
+  ],
+  "wfd_runtime_verified": 0
+}

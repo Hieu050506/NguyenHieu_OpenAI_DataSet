@@ -1,0 +1,24 @@
+services:
+  build:
+    build:
+      context: ../../sources/WFD/scripts/build
+      dockerfile: Dockerfile.jdk11
+    working_dir: /build/jdk_11_maven
+    environment:
+      BUILD_EVOMASTER: 'false'
+    volumes:
+    - ../../sources/WFD/jdk_11_maven:/build/jdk_11_maven
+    - ../../sources/WFD/dist:/dist
+    - maven-cache:/root/.m2
+    - gradle-cache:/root/.gradle
+    command:
+    - bash
+    - -lc
+    - 'set -e
+
+      mvn -f cs/pom.xml -pl rest/http-patch-spring -am install -DskipTests
+
+      cp cs/rest/http-patch-spring/target/http-patch-spring-sut.jar /dist/'
+volumes:
+  maven-cache: {}
+  gradle-cache: {}

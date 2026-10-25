@@ -1,0 +1,75 @@
+{
+  "status": "draft_from_unverified_spec",
+  "project_id": "API-019-swagger-petstore",
+  "description": "Read-only local smoke candidates, not a complete CRUD or ground-truth test suite. Authenticated routes require explicit test credentials.",
+  "cases": [
+    {
+      "id": "SMOKE-01",
+      "method": "GET",
+      "path": "/api/v3/pet/findByStatus",
+      "expected_statuses": [
+        200
+      ],
+      "declared_security": [
+        {
+          "petstore_auth": [
+            "write:pets",
+            "read:pets"
+          ]
+        }
+      ],
+      "executed": false
+    },
+    {
+      "id": "SMOKE-02",
+      "method": "GET",
+      "path": "/api/v3/pet/findByTags",
+      "expected_statuses": [
+        200
+      ],
+      "declared_security": [
+        {
+          "petstore_auth": [
+            "write:pets",
+            "read:pets"
+          ]
+        }
+      ],
+      "executed": false
+    },
+    {
+      "id": "SMOKE-03",
+      "method": "GET",
+      "path": "/api/v3/store/inventory",
+      "expected_statuses": [
+        200
+      ],
+      "declared_security": [
+        {
+          "api_key": []
+        }
+      ],
+      "executed": false
+    },
+    {
+      "id": "SMOKE-04",
+      "method": "GET",
+      "path": "/api/v3/user/login",
+      "expected_statuses": [
+        200
+      ],
+      "declared_security": [],
+      "executed": false
+    },
+    {
+      "id": "SMOKE-05",
+      "method": "GET",
+      "path": "/api/v3/user/logout",
+      "expected_statuses": [
+        200
+      ],
+      "declared_security": [],
+      "executed": false
+    }
+  ]
+}

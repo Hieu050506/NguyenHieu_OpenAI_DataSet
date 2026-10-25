@@ -1,0 +1,186 @@
+[
+  {
+    "method": "POST",
+    "path": "/annotation",
+    "operation_id": "fetchVariantAnnotationPOST",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/annotation/dbsnp/",
+    "operation_id": "fetchVariantAnnotationByIdPOST",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/annotation/dbsnp/{variantId}",
+    "operation_id": "fetchVariantAnnotationByIdGET",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/annotation/genomic",
+    "operation_id": "fetchVariantAnnotationByGenomicLocationPOST",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/annotation/genomic/{genomicLocation}",
+    "operation_id": "fetchVariantAnnotationByGenomicLocationGET",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/annotation/{variant}",
+    "operation_id": "fetchVariantAnnotationGET",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/ensembl/canonical-gene/entrez",
+    "operation_id": "fetchCanonicalEnsemblGeneIdByEntrezGeneIdsPOST",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/ensembl/canonical-gene/entrez/{entrezGeneId}",
+    "operation_id": "fetchCanonicalEnsemblGeneIdByEntrezGeneIdGET",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/ensembl/canonical-gene/hgnc",
+    "operation_id": "fetchCanonicalEnsemblGeneIdByHugoSymbolsPOST",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/ensembl/canonical-gene/hgnc/{hugoSymbol}",
+    "operation_id": "fetchCanonicalEnsemblGeneIdByHugoSymbolGET",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/ensembl/canonical-transcript/hgnc",
+    "operation_id": "fetchCanonicalEnsemblTranscriptsByHugoSymbolsPOST",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/ensembl/canonical-transcript/hgnc/{hugoSymbol}",
+    "operation_id": "fetchCanonicalEnsemblTranscriptByHugoSymbolGET",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/ensembl/transcript",
+    "operation_id": "fetchEnsemblTranscriptsGET",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/ensembl/transcript",
+    "operation_id": "fetchEnsemblTranscriptsByEnsemblFilterPOST",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/ensembl/transcript/{transcriptId}",
+    "operation_id": "fetchEnsemblTranscriptByTranscriptIdGET",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/ensembl/xrefs",
+    "operation_id": "fetchGeneXrefsGET",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/pdb/header",
+    "operation_id": "fetchPdbHeaderPOST",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/pdb/header/{pdbId}",
+    "operation_id": "fetchPdbHeaderGET",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/pfam/domain",
+    "operation_id": "fetchPfamDomainsByPfamAccessionPOST",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/pfam/domain/{pfamAccession}",
+    "operation_id": "fetchPfamDomainsByAccessionGET",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/ptm/experimental",
+    "operation_id": "fetchPostTranslationalModificationsGET",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/ptm/experimental",
+    "operation_id": "fetchPostTranslationalModificationsByPtmFilterPOST",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/version",
+    "operation_id": "fetchVersionGET",
+    "declared_statuses": [
+      "200"
+    ]
+  }
+]

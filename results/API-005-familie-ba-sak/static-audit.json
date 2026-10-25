@@ -1,0 +1,12 @@
+{
+  "project_id": "API-005-familie-ba-sak",
+  "checked_at_utc": "2026-10-25T17:35:02.651338+00:00",
+  "source_integrity": "pass",
+  "integrity_errors": [],
+  "raw_spec_sha256": "b40cff15493668b17751d762cf6a3a07239ee97be20fc85b5853217280db327f",
+  "spec_structure": "valid",
+  "spec_error": null,
+  "operation_count": 183,
+  "runtime": "not_verified",
+  "warning": "Static checks are not HTTP execution or verified Ground Truth."
+}

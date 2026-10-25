@@ -1,0 +1,272 @@
+{
+  "checked_at_utc": "2026-10-25T17:35:07.887803+00:00",
+  "imported_projects": 19,
+  "source_integrity_passed": 19,
+  "spec_structure_valid": 8,
+  "spec_structure_invalid": 11,
+  "docker_cli_available": false,
+  "runtime_verified_by_this_audit": 0,
+  "projects": [
+    {
+      "project_id": "API-002-bibliothek",
+      "checked_at_utc": "2026-10-25T17:35:01.095254+00:00",
+      "source_integrity": "pass",
+      "integrity_errors": [],
+      "raw_spec_sha256": "48f2e156d856767271165d7c8a3470150c2a0357be595184d76095a9d96e0df9",
+      "spec_structure": "invalid",
+      "spec_error": {
+        "type": "OpenAPIValidationError",
+        "message": "'title' is a required property\n\nFailed validating 'required' in schema['properties']['info']:\n    {'type': 'object',\n     'required': ['title', 'version'],\n     'properties': {'title': {'type': 'string'},\n                    'description': {'type': 'string'},\n                    'termsOfService': {'type': 'string',\n                                       'format': 'uri-reference'},\n                    'contact': {'$ref': '#/definitions/Contact'},\n                    'license': {'$ref': '#/definitions/License'},\n                    'version': {'type': 'string'}},\n     'patternProperties': {'^x-': {}},\n     'additionalProperties': False}\n\nOn instance['info']:\n    {}"
+      },
+      "operation_count": 8,
+      "runtime": "not_verified",
+      "warning": "Static checks are not HTTP execution or verified Ground Truth."
+    },
+    {
+      "project_id": "API-003-catwatch",
+      "checked_at_utc": "2026-10-25T17:35:01.392633+00:00",
+      "source_integrity": "pass",
+      "integrity_errors": [],
+      "raw_spec_sha256": "a57c28730993b6f2bdc8f0436e54344ed2a45b22eb06136a492d62142d0b20cb",
+      "spec_structure": "invalid",
+      "spec_error": {
+        "type": "OpenAPIValidationError",
+        "message": "'0' does not match any of the regexes: '^([0-9]{3})$|^(default)$', '^x-'\n\nFailed validating 'additionalProperties' in schema['properties']['paths']['patternProperties']['^/']['properties']['get']['properties']['responses']:\n    {'type': 'object',\n     'description': 'Response objects names can either be any valid HTTP '\n                    \"status code or 'default'.\",\n     'minProperties': 1,\n     'additionalProperties': False,\n     'patternProperties': {'^([0-9]{3})$|^(default)$': {'$ref': '#/definitions/responseValue'},\n                           '^x-': {'$ref': '#/definitions/vendorExtension'}},\n     'not': {'type': 'object',\n             'additionalProperties': False,\n             'patternProperties': {'^x-': {'$ref': '#/definitions/vendorExtension'}}}}\n\nOn instance['paths']['/contributors']['get']['responses']:\n    {'0': {'description': 'Unexpected error'},\n     '200': {'description': 'An array of Contributors of selected Github '\n                            'organization',\n             'schema': {'type': 'array',\n                        'items': {'$ref': '#/definitions/Contributor'}}},\n     '401': {'description': 'Unauthorized'},\n     '403': {'description': 'Forbidden'},\n     '404': {'description': 'Not Found'}}"
+      },
+      "operation_count": 23,
+      "runtime": "not_verified",
+      "warning": "Static checks are not HTTP execution or verified Ground Truth."
+    },
+    {
+      "project_id": "API-004-cwa-verification",
+      "checked_at_utc": "2026-10-25T17:35:01.690519+00:00",
+      "source_integrity": "pass",
+      "integrity_errors": [],
+      "raw_spec_sha256": "24e000dd26121ac25f6f177e3e6062797cd63347737eb24d5d53e1d139c77a83",
+      "spec_structure": "invalid",
+      "spec_error": {
+        "type": "OpenAPIValidationError",
+        "message": "{'type': 'object', 'properties': {'key': {'type': 'string'}, 'keyDob': {'type': 'string', 'required': False, 'description': \"Only used in conjunction with keyType == GUID. The hashed GUID consists of concat('x', substring(sha256_hex(concat(test-id-uuid, DateOfBirth.format(DDMMYYYY))), 1) - e.g. concat('x', substring(sha256_hex('7bb41672-7de4-44c3-b751-4258e59f3e2508051992')), 1)) --> x3712193bd35d40f03ee497ea7e4ea8278d8fcc8a2287843bb0ab36939d222b4\"}, 'keyType': {'type': 'string', 'enum': ['GUID', 'TELETAN']}}, 'description': 'The registration token request model.'} is not valid under any of the given schemas\n\nFailed validating 'oneOf' in schema['properties']['components']['properties']['schemas']['patternProperties']['^[a-zA-Z0-9\\\\.\\\\-_]+$']:\n    {'oneOf': [{'$ref': '#/definitions/Schema'},\n               {'$ref': '#/definitions/Reference'}]}\n\nOn instance['components']['schemas']['RegistrationTokenRequest']:\n    {'type': 'object',\n     'properties': {'key': {'type': 'string'},\n                    'keyDob': {'type': 'string',\n                               'required': False,\n                               'description': 'Only used in conjunction '\n                                              'with keyType == GUID. The '\n                                              'hashed GUID consists of '\n                                              \"concat('x', \"\n                                              'substring(sha256_hex(concat(test-id-uuid, '\n                                              'DateOfBirth.format(DDMMYYYY))), '\n                                              \"1) - e.g. concat('x', \"\n                                              \"substring(sha256_hex('7bb41672-7de4-44c3-b751-4258e59f3e2508051992')), \"\n                                              '1)) --> '\n                                              'x3712193bd35d40f03ee497ea7e4ea8278d8fcc8a2287843bb0ab36939d222b4'},\n                    'keyType': {'type': 'string',\n                                'enum': ['GUID', 'TELETAN']}},\n     'description': 'The registration token request model.'}"
+      },
+      "operation_count": 5,
+      "runtime": "not_verified",
+      "warning": "Static checks are not HTTP execution or verified Ground Truth."
+    },
+    {
+      "project_id": "API-005-familie-ba-sak",
+      "checked_at_utc": "2026-10-25T17:35:02.651338+00:00",
+      "source_integrity": "pass",
+      "integrity_errors": [],
+      "raw_spec_sha256": "b40cff15493668b17751d762cf6a3a07239ee97be20fc85b5853217280db327f",
+      "spec_structure": "valid",
+      "spec_error": null,
+      "operation_count": 183,
+      "runtime": "not_verified",
+      "warning": "Static checks are not HTTP execution or verified Ground Truth."
+    },
+    {
+      "project_id": "API-006-features-service",
+      "checked_at_utc": "2026-10-25T17:35:02.743227+00:00",
+      "source_integrity": "pass",
+      "integrity_errors": [],
+      "raw_spec_sha256": "a496b74c1d421a8f4657d449a082e00941b42702ddf23ebfaaf3a0ca66395508",
+      "spec_structure": "invalid",
+      "spec_error": {
+        "type": "OpenAPIValidationError",
+        "message": "'title' is a required property\n\nFailed validating 'required' in schema['properties']['info']:\n    {'type': 'object',\n     'description': 'General information about the API.',\n     'required': ['version', 'title'],\n     'additionalProperties': False,\n     'patternProperties': {'^x-': {'$ref': '#/definitions/vendorExtension'}},\n     'properties': {'title': {'type': 'string',\n                              'description': 'A unique and precise title '\n                                             'of the API.'},\n                    'version': {'type': 'string',\n                                'description': 'A semantic version number '\n                                               'of the API.'},\n                    'description': {'type': 'string',\n                                    'description': 'A longer description '\n                                                   'of the API. Should be '\n                                                   'different from the '\n                                                   'title.  GitHub '\n                                                   'Flavored Markdown is '\n                                                   'allowed.'},\n                    'termsOfService': {'type': 'string',\n                                       'description': 'The terms of '\n                                                      'service for the '\n                                                      'API.'},\n                    'contact': {'$ref': '#/definitions/contact'},\n                    'license': {'$ref': '#/definitions/license'}}}\n\nOn instance['info']:\n    {'version': '1.0'}"
+      },
+      "operation_count": 18,
+      "runtime": "not_verified",
+      "warning": "Static checks are not HTTP execution or verified Ground Truth."
+    },
+    {
+      "project_id": "API-007-genome-nexus",
+      "checked_at_utc": "2026-10-25T17:35:02.981548+00:00",
+      "source_integrity": "pass",
+      "integrity_errors": [],
+      "raw_spec_sha256": "f9c56d50feef581f6a7aa37ca8cd3b9d4ccb6abf3be0f832a31ba82d02497125",
+      "spec_structure": "invalid",
+      "spec_error": {
+        "type": "OpenAPIValidationError",
+        "message": "'hotspots' is not of type 'array'\n\nFailed validating 'type' in schema:\n    {'name': 'fields',\n     'in': 'query',\n     'description': 'Comma separated list of fields to include '\n                    '(case-sensitive!). For example: hotspots',\n     'required': False,\n     'type': 'array',\n     'items': {'type': 'string'},\n     'collectionFormat': 'multi',\n     'default': 'hotspots'}\n\nOn instance:\n    'hotspots'"
+      },
+      "operation_count": 23,
+      "runtime": "not_verified",
+      "warning": "Static checks are not HTTP execution or verified Ground Truth."
+    },
+    {
+      "project_id": "API-008-http-patch-spring",
+      "checked_at_utc": "2026-10-25T17:35:03.113048+00:00",
+      "source_integrity": "pass",
+      "integrity_errors": [],
+      "raw_spec_sha256": "6aa9b270d53febff46a5ea9cc296664b1a0e715c50697d9526345316456adcc7",
+      "spec_structure": "valid",
+      "spec_error": null,
+      "operation_count": 6,
+      "runtime": "not_verified",
+      "warning": "Static checks are not HTTP execution or verified Ground Truth."
+    },
+    {
+      "project_id": "API-009-market",
+      "checked_at_utc": "2026-10-25T17:35:03.267669+00:00",
+      "source_integrity": "pass",
+      "integrity_errors": [],
+      "raw_spec_sha256": "cf51a9d511b970fd51bce1206eb9429024c11eb180ada58b43193bcb5883c3cd",
+      "spec_structure": "valid",
+      "spec_error": null,
+      "operation_count": 13,
+      "runtime": "not_verified",
+      "warning": "Static checks are not HTTP execution or verified Ground Truth."
+    },
+    {
+      "project_id": "API-010-microcks",
+      "checked_at_utc": "2026-10-25T17:35:03.539590+00:00",
+      "source_integrity": "pass",
+      "integrity_errors": [],
+      "raw_spec_sha256": "ddf59aaa6ad34901b042457c89e0e3d9ae051f5c5626ddd3f55ddd321bc7c835",
+      "spec_structure": "invalid",
+      "spec_error": {
+        "type": "UnresolvableParameterError",
+        "message": "Path parameter 'id' for 'post' operation in '/api/jobs/{id}' was not resolved"
+      },
+      "operation_count": 88,
+      "runtime": "not_verified",
+      "warning": "Static checks are not HTTP execution or verified Ground Truth."
+    },
+    {
+      "project_id": "API-011-ocvn",
+      "checked_at_utc": "2026-10-25T17:35:06.314021+00:00",
+      "source_integrity": "pass",
+      "integrity_errors": [],
+      "raw_spec_sha256": "7b0bc65bb8d6769db7a332df79084b7db441273e82474201ac9f797bd0b7fde6",
+      "spec_structure": "invalid",
+      "spec_error": {
+        "type": "PointerToNowhere",
+        "message": "'/definitions/TextSearchRequest' does not exist within {'swagger': '2.0', 'info': {'description': 'These endpoints are used to feed the open contracting dashboard', 'version': '1.0', 'title': 'Open Contracting Dashboards API', 'license': {'name': 'MIT License', 'url': 'https://opensource.org/licenses/MIT'}}, 'host': 'localhost:8090', 'basePath': '/', 'tags': [{'name': 'flag-i-004-stats-controller', 'description': 'Flag I 004 Stats Controller'}, {'name': 'flag-i-019-stats-controller', 'description': 'Flag I 019 Stats Controller'}, {'name': 'tenders-by-item-classification', 'description': 'Tenders By Item Classification'}, {'name': 'flag-i-038-stats-controller', 'description': 'Flag I 038 Stats Controller'}, {'name': 'supplier-search-controller', 'description': 'Supplier Search Controller'}, {'name': 'average-number-of-tenderers-controller', 'description': 'Average Number Of Tenderers Controller'}, {'name': 'city-search-controller', 'description': 'City Search Controller'}, {'name': 'excel-export-controller', 'description': 'Excel Export Controller'}, {'name': 'flag-i-007-release-search-controller', 'description': 'Flag I 007 Release Search Controller'}, {'name': 'funding-by-location-controller', 'description': 'Funding By Location Controller'}, {'name': 'procuring-entity-search-controller', 'description': 'Procuring Entity Search Controller'}, {'name': 'tender-percentages-excel-controller', 'description': 'Tender Percentages Excel Controller'}, {'name': 'tenders-awards-years', 'description': 'Tenders Awards Years'}, {'name': 'flag-i-003-release-search-controller', 'description': 'Flag I 003 Release Search Controller'}, {'name': 'flag-i-004-release-search-controller', 'description': 'Flag I 004 Release Search Controller'}, {'name': 'percentage-awards-narrow-publication-dates', 'description': 'Percentage Awards Narrow Publication Dates'}, {'name': 'contr-method-search-controller', 'description': 'Contr Method Search Controller'}, {'name': 'top-ten-controller', 'description': 'Top Ten Controller'}, {'name': 'flag-i-019-release-search-controller', 'description': 'Flag I 019 Release Search Controller'}, {'name': 'flag-i-077-release-search-controller', 'description': 'Flag I 077 Release Search Controller'}, {'name': 'total-cancelled-tenders-excel-controller', 'description': 'Total Cancelled Tenders Excel Controller'}, {'name': 'org-group-search-controller', 'description': 'Org Group Search Controller'}, {'name': 'tenders-by-item-excel-controller', 'description': 'Tenders By Item Excel Controller'}, {'name': 'bid-types-search-controller', 'description': 'Bid Types Search Controller'}, {'name': 'tender-price-excel-controller', 'description': 'Tender Price Excel Controller'}, {'name': 'frequent-tenderers-controller', 'description': 'Frequent Tenderers Controller'}, {'name': 'tenders-awards-value-intervals', 'description': 'Tenders Awards Value Intervals'}, {'name': 'count-plans-tenders-awards-controller', 'description': 'Count Plans Tenders Awards Controller'}, {'name': 'org-department-search-controller', 'description': 'Org Department Search Controller'}, {'name': 'ocds-controller', 'description': 'Ocds Controller'}, {'name': 'bid-selection-method-search-controller', 'description': 'Bid Selection Method Search Controller'}, {'name': 'frequent-suppliers-time-interval-controller', 'description': 'Frequent Suppliers Time Interval Controller'}, {'name': 'flag-i-077-stats-controller', 'description': 'Flag I 077 Stats Controller'}, {'name': 'location-search-controller', 'description': 'Location Search Controller'}, {'name': 'flag-i-180-stats-controller', 'description': 'Flag I 180 Stats Controller'}, {'name': 'cost-effectiveness-visuals-controller', 'description': 'Cost Effectiveness Visuals Controller'}, {'name': 'cost-effectiveness-excel-controller', 'description': 'Cost Effectiveness Excel Controller'}, {'name': 'tender-price-by-type-year-controller', 'description': 'Tender Price By Type Year Controller'}, {'name': 'flag-i-038-release-search-controller', 'description': 'Flag I 038 Release Search Controller'}, {'name': 'procurement-method-search-controller', 'description': 'Procurement Method Search Controller'}, {'name': 'average-number-of-tenderers-excel-controller', 'description': 'Average Number Of Tenderers Excel Controller'}, {'name': 'procurement-activity-by-year-controller', 'description': 'Procurement Activity By Year Controller'}, {'name': 'average-tender-and-award-periods-controller', 'description': 'Average Tender And Award Periods Controller'}, {'name': 'flag-i-007-stats-controller', 'description': 'Flag I 007 Stats Controller'}, {'name': 'organization-search-controller', 'description': 'Organization Search Controller'}, {'name': 'buyer-search-controller', 'description': 'Buyer Search Controller'}, {'name': 'flag-i-180-release-search-controller', 'description': 'Flag I 180 Release Search Controller'}, {'name': 'tender-percentages-controller', 'description': 'Tender Percentages Controller'}, {'name': 'total-"
+      },
+      "operation_count": 192,
+      "runtime": "not_verified",
+      "warning": "Static checks are not HTTP execution or verified Ground Truth."
+    },
+    {
+      "project_id": "API-012-pay-publicapi",
+      "checked_at_utc": "2026-10-25T17:35:06.533151+00:00",
+      "source_integrity": "pass",
+      "integrity_errors": [],
+      "raw_spec_sha256": "acb5c513e5d9b903621f43e5297086346267e52ed04827f7ca647566720795fc",
+      "spec_structure": "valid",
+      "spec_error": null,
+      "operation_count": 16,
+      "runtime": "not_verified",
+      "warning": "Static checks are not HTTP execution or verified Ground Truth."
+    },
+    {
+      "project_id": "API-013-person-controller",
+      "checked_at_utc": "2026-10-25T17:35:06.712555+00:00",
+      "source_integrity": "pass",
+      "integrity_errors": [],
+      "raw_spec_sha256": "6a627d75dd183b8b336cc243131bf3fd637e6dab935b9029a54c88a2a6e16e7f",
+      "spec_structure": "invalid",
+      "spec_error": {
+        "type": "UnresolvableParameterError",
+        "message": "Path parameter 'ids' for 'get' operation in '/api/persons/{ids}' was not resolved"
+      },
+      "operation_count": 12,
+      "runtime": "not_verified",
+      "warning": "Static checks are not HTTP execution or verified Ground Truth."
+    },
+    {
+      "project_id": "API-014-proxyprint",
+      "checked_at_utc": "2026-10-25T17:35:07.021403+00:00",
+      "source_integrity": "pass",
+      "integrity_errors": [],
+      "raw_spec_sha256": "c616e09081795114abd1fb260459bb16427b7936a2ff4e96927490fbbf3a596b",
+      "spec_structure": "invalid",
+      "spec_error": {
+        "type": "OpenAPIValidationError",
+        "message": "'file' is not valid under any of the given schemas\n\nFailed validating 'anyOf' in schema['properties']['definitions']['additionalProperties']['properties']['properties']['additionalProperties']['properties']['type']:\n    {'anyOf': [{'$ref': '#/definitions/simpleTypes'},\n               {'type': 'array',\n                'items': {'$ref': '#/definitions/simpleTypes'},\n                'minItems': 1,\n                'uniqueItems': True}]}\n\nOn instance['definitions']['FileSystemResource']['properties']['file']['type']:\n    'file'"
+      },
+      "operation_count": 115,
+      "runtime": "not_verified",
+      "warning": "Static checks are not HTTP execution or verified Ground Truth."
+    },
+    {
+      "project_id": "API-015-quartz-manager",
+      "checked_at_utc": "2026-10-25T17:35:07.175629+00:00",
+      "source_integrity": "pass",
+      "integrity_errors": [],
+      "raw_spec_sha256": "2ca01332aba2ecd4758cf733108d22c8ebd2fe42059f8c12ae6c595f6338f752",
+      "spec_structure": "invalid",
+      "spec_error": {
+        "type": "PointerToNowhere",
+        "message": "'/components/schemas/SimpleTriggerDTO' does not exist within {'openapi': '3.0.1', 'info': {'title': 'QUARTZ MANAGER DEMO API', 'description': 'Quartz Manager- DEMO - REST API', 'license': {'name': 'Apache License 2.0', 'url': 'https://github.com/fabioformosa/quartz-manager/blob/master/LICENSE'}, 'version': '1.0.0'}, 'servers': [{'url': 'http://localhost:8080', 'description': 'Generated server url'}], 'paths': {'/quartz-manager/simple-triggers/{name}': {'get': {'tags': ['simple-trigger-controller'], 'summary': 'Get a simple trigger by name', 'operationId': 'getSimpleTrigger', 'parameters': [{'name': 'name', 'in': 'path', 'required': True, 'schema': {'type': 'string'}}], 'responses': {'404': {'description': 'Trigger not found', 'content': {}}, '200': {'description': 'Got the trigger by its name', 'content': {'application/json': {'schema': {'$ref': '#/components/schemas/SimpleTriggerDTO'}}}}}, 'security': [{'quartz-manager-auth': []}]}, 'put': {'tags': ['simple-trigger-controller'], 'summary': 'Reschedule a simple trigger', 'operationId': 'rescheduleSimpleTrigger', 'parameters': [{'name': 'name', 'in': 'path', 'required': True, 'schema': {'type': 'string'}}], 'requestBody': {'content': {'application/json': {'schema': {'$ref': '#/components/schemas/SimpleTriggerInputDTO'}}}, 'required': True}, 'responses': {'404': {'description': 'Not Found', 'content': {'*/*': {'schema': {'$ref': '#/components/schemas/ExceptionResponse'}}}}, '200': {'description': 'Rescheduled a simple trigger', 'content': {'application/json': {'schema': {'$ref': '#/components/schemas/TriggerDTO'}}}}, '400': {'description': 'Invalid trigger configuration'}}, 'security': [{'quartz-manager-auth': []}]}, 'post': {'tags': ['simple-trigger-controller'], 'summary': 'Schedule a new simple trigger', 'operationId': 'postSimpleTrigger', 'parameters': [{'name': 'name', 'in': 'path', 'required': True, 'schema': {'type': 'string'}}], 'requestBody': {'content': {'application/json': {'schema': {'$ref': '#/components/schemas/SimpleTriggerInputDTO'}}}, 'required': True}, 'responses': {'404': {'description': 'Not Found', 'content': {'*/*': {'schema': {'$ref': '#/components/schemas/ExceptionResponse'}}}}, '201': {'description': 'Scheduled a new simple trigger', 'content': {'application/json': {'schema': {'$ref': '#/components/schemas/SimpleTriggerDTO'}}}}, '400': {'description': 'Invalid trigger configuration'}}, 'security': [{'quartz-manager-auth': []}]}}, '/quartz-manager/triggers': {'get': {'tags': ['trigger-controller'], 'summary': 'Get a list of triggers', 'operationId': 'listTriggers', 'responses': {'404': {'description': 'Not Found', 'content': {'*/*': {'schema': {'$ref': '#/components/schemas/ExceptionResponse'}}}}, '200': {'description': 'Got the trigger list', 'content': {'application/json': {'schema': {'$ref': '#/components/schemas/TriggerKeyDTO'}}}}}, 'security': [{'quartz-manager-auth': []}]}}, '/quartz-manager/scheduler': {'get': {'tags': ['scheduler-controller'], 'summary': 'Get the scheduler details', 'operationId': 'getScheduler', 'responses': {'404': {'description': 'Not Found', 'content': {'*/*': {'schema': {'$ref': '#/components/schemas/ExceptionResponse'}}}}, '200': {'description': 'Return the scheduler config', 'content': {'application/json': {'schema': {'$ref': '#/components/schemas/SchedulerDTO'}}}}}, 'security': [{'quartz-manager-auth': []}]}}, '/quartz-manager/scheduler/stop': {'get': {'tags': ['scheduler-controller'], 'summary': 'Stop the scheduler', 'operationId': 'stop', 'responses': {'404': {'description': 'Not Found', 'content': {'*/*': {'schema': {'$ref': '#/components/schemas/ExceptionResponse'}}}}, '204': {'description': 'Got stopped successfully'}}, 'security': [{'quartz-manager-auth': []}]}}, '/quartz-manager/scheduler/run': {'get': {'tags': ['scheduler-controller'], 'summary': 'Start the scheduler', 'operationId': 'run', 'responses': {'404': {'description': 'Not Found', 'content': {'*/*': {'schema': {'$ref': '#/components/schemas/ExceptionResponse'}}}}, '204': {'description': 'Got started successfully'}}, 'security': [{'quartz-manager-auth': []}]}}, '/quartz-manager/scheduler/resume': {'get': {'tags': ['scheduler-controller'], 'summary': 'Get resumed the scheduler', 'operationId': 'resume', 'responses': {'404': {'description': 'Not Found', 'content': {'*/*': {'schema': {'$ref': '#/components/schemas/ExceptionResponse'}}}}, '204': {'description': 'Got resumed successfully'}}, 'security': [{'quartz-manager-auth': []}]}}, '/quartz-manager/scheduler/pause': {'get': {'tags': ['scheduler-controller'], 'summary': 'Get paused the scheduler', 'operationId': 'pause', 'responses': {'404': {'description': 'Not Found', 'content': {'*/*': {'schema': {'$ref': '#/components/schemas/ExceptionResponse'}}}}, '204': {'description': 'Got paused successfully'}}, 'security': [{'quartz-manager-auth': []}]}}, '/quartz-manager/jobs': {'get': {'tags': ['job-controller'], 'summary': 'Get the list of job classes eligible for Quartz-Manager', 'operationId"
+      },
+      "operation_count": 11,
+      "runtime": "not_verified",
+      "warning": "Static checks are not HTTP execution or verified Ground Truth."
+    },
+    {
+      "project_id": "API-016-scout-api",
+      "checked_at_utc": "2026-10-25T17:35:07.336667+00:00",
+      "source_integrity": "pass",
+      "integrity_errors": [],
+      "raw_spec_sha256": "c8a539fcd9b9beb41f7943a83de192688718be725d24511613ed606e3f6c6b08",
+      "spec_structure": "invalid",
+      "spec_error": {
+        "type": "DuplicateOperationIDError",
+        "message": "Operation ID 'get' for 'get' in '/v1/media_files/{id}' is not unique"
+      },
+      "operation_count": 49,
+      "runtime": "not_verified",
+      "warning": "Static checks are not HTTP execution or verified Ground Truth."
+    },
+    {
+      "project_id": "API-017-spring-batch-rest",
+      "checked_at_utc": "2026-10-25T17:35:07.463244+00:00",
+      "source_integrity": "pass",
+      "integrity_errors": [],
+      "raw_spec_sha256": "e6386f1f9d9f7d23299e961b51ed0f29e3297a0c1578632b20e31e3678b0e709",
+      "spec_structure": "valid",
+      "spec_error": null,
+      "operation_count": 5,
+      "runtime": "not_verified",
+      "warning": "Static checks are not HTTP execution or verified Ground Truth."
+    },
+    {
+      "project_id": "API-018-spring-rest-example",
+      "checked_at_utc": "2026-10-25T17:35:07.624778+00:00",
+      "source_integrity": "pass",
+      "integrity_errors": [],
+      "raw_spec_sha256": "5f550a2e1a56f0996cfcf989991f77cbe0c76af2f567dc26ce9ac73fae68ba59",
+      "spec_structure": "valid",
+      "spec_error": null,
+      "operation_count": 9,
+      "runtime": "not_verified",
+      "warning": "Static checks are not HTTP execution or verified Ground Truth."
+    },
+    {
+      "project_id": "API-019-swagger-petstore",
+      "checked_at_utc": "2026-10-25T17:35:07.742858+00:00",
+      "source_integrity": "pass",
+      "integrity_errors": [],
+      "raw_spec_sha256": "f3daab5cbcd285a8431ed368c1cbe75053e3725c04e5377044a450b003f4226a",
+      "spec_structure": "valid",
+      "spec_error": null,
+      "operation_count": 19,
+      "runtime": "not_verified",
+      "warning": "Static checks are not HTTP execution or verified Ground Truth."
+    },
+    {
+      "project_id": "API-020-user-management",
+      "checked_at_utc": "2026-10-25T17:35:07.886730+00:00",
+      "source_integrity": "pass",
+      "integrity_errors": [],
+      "raw_spec_sha256": "2a06d105821b54e7141534ca76f083e9bb112363ebf939b5e88912356a6b40a4",
+      "spec_structure": "valid",
+      "spec_error": null,
+      "operation_count": 21,
+      "runtime": "not_verified",
+      "warning": "Static checks are not HTTP execution or verified Ground Truth."
+    }
+  ]
+}

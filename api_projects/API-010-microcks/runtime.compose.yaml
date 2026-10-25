@@ -1,0 +1,65 @@
+services:
+  mitmproxy:
+    image: mitmproxy/mitmproxy:10.2.4
+    user: 0:0
+    environment:
+      MITM_LOG_DIR: /custom-logs
+      MITM_LOG_FILE: ${MITM_LOG_FILE:-minlog.csv}
+    command: "mitmdump \n  --mode reverse:http://sut-microcks:8080\n  --listen-host\
+      \ 0.0.0.0\n  --listen-port 8080\n  --set keep_host_header=true\n  -s /addons/minlog.py\n"
+    volumes:
+    - ../../results/API-010-microcks/traffic:/custom-logs
+    - ../../sources/WFD/dockerfiles/addons:/addons:ro
+    ports:
+    - 127.0.0.1:8110:8080
+    depends_on:
+    - sut-microcks
+  sut-microcks:
+    build:
+      dockerfile: ./dockerfiles/microcks.dockerfile
+      context: ../../sources/WFD
+    environment:
+      AUTH_PORT: ${AUTH_PORT:-8081}
+  mongodb:
+    image: mongo:7.0
+    tmpfs:
+    - /data/db
+    environment:
+      MONGODB_REPLICA_SET_MODE: primary
+      ALLOW_EMPTY_PASSWORD: true
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.0.0
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+      KC_HEALTH_ENABLED: 'true'
+      KC_METRICS_ENABLED: 'true'
+    volumes:
+    - ../../sources/WFD/scripts/dockerize/data/additional_files/microcks/microcks-realm-sample.json:/opt/keycloak/data/import/microcks-realm.json
+    healthcheck:
+      test:
+      - CMD
+      - sh
+      - -c
+      - "echo -e 'GET /health/live HTTP/1.1\r\nHost: localhost\r\n\r\n' > /dev/tcp/localhost/9000"
+      interval: 30s
+      timeout: 30s
+      retries: 3
+    ports:
+    - 127.0.0.1:${AUTH_PORT:-8081}:8080
+    command:
+    - start-dev
+    - --hostname=http://localhost:${AUTH_PORT:-8081}
+    - --import-realm
+    - --health-enabled=true
+  postman:
+    image: quay.io/microcks/microcks-postman-runtime:0.6.0
+    healthcheck:
+      test:
+      - CMD
+      - curl
+      - -f
+      - http://localhost:3000/health
+      interval: 30s
+      timeout: 30s
+      retries: 3

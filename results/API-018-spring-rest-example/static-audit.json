@@ -1,0 +1,12 @@
+{
+  "project_id": "API-018-spring-rest-example",
+  "checked_at_utc": "2026-10-25T17:35:07.624778+00:00",
+  "source_integrity": "pass",
+  "integrity_errors": [],
+  "raw_spec_sha256": "5f550a2e1a56f0996cfcf989991f77cbe0c76af2f567dc26ce9ac73fae68ba59",
+  "spec_structure": "valid",
+  "spec_error": null,
+  "operation_count": 9,
+  "runtime": "not_verified",
+  "warning": "Static checks are not HTTP execution or verified Ground Truth."
+}

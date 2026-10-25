@@ -1,0 +1,57 @@
+{
+  "status": "draft_from_unverified_spec",
+  "project_id": "API-010-microcks",
+  "description": "Read-only local smoke candidates, not a complete CRUD or ground-truth test suite. Authenticated routes require explicit test credentials.",
+  "cases": [
+    {
+      "id": "SMOKE-01",
+      "method": "GET",
+      "path": "/api/jobs",
+      "expected_statuses": [
+        200
+      ],
+      "declared_security": [],
+      "executed": false
+    },
+    {
+      "id": "SMOKE-02",
+      "method": "GET",
+      "path": "/api/version/info",
+      "expected_statuses": [
+        200
+      ],
+      "declared_security": [],
+      "executed": false
+    },
+    {
+      "id": "SMOKE-03",
+      "method": "GET",
+      "path": "/api/services",
+      "expected_statuses": [
+        200
+      ],
+      "declared_security": [],
+      "executed": false
+    },
+    {
+      "id": "SMOKE-04",
+      "method": "GET",
+      "path": "/api/services/map",
+      "expected_statuses": [
+        200
+      ],
+      "declared_security": [],
+      "executed": false
+    },
+    {
+      "id": "SMOKE-05",
+      "method": "GET",
+      "path": "/api/services/labels",
+      "expected_statuses": [
+        200
+      ],
+      "declared_security": [],
+      "executed": false
+    }
+  ]
+}

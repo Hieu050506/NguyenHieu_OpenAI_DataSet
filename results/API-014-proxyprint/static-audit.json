@@ -1,0 +1,15 @@
+{
+  "project_id": "API-014-proxyprint",
+  "checked_at_utc": "2026-10-25T17:35:07.021403+00:00",
+  "source_integrity": "pass",
+  "integrity_errors": [],
+  "raw_spec_sha256": "c616e09081795114abd1fb260459bb16427b7936a2ff4e96927490fbbf3a596b",
+  "spec_structure": "invalid",
+  "spec_error": {
+    "type": "OpenAPIValidationError",
+    "message": "'file' is not valid under any of the given schemas\n\nFailed validating 'anyOf' in schema['properties']['definitions']['additionalProperties']['properties']['properties']['additionalProperties']['properties']['type']:\n    {'anyOf': [{'$ref': '#/definitions/simpleTypes'},\n               {'type': 'array',\n                'items': {'$ref': '#/definitions/simpleTypes'},\n                'minItems': 1,\n                'uniqueItems': True}]}\n\nOn instance['definitions']['FileSystemResource']['properties']['file']['type']:\n    'file'"
+  },
+  "operation_count": 115,
+  "runtime": "not_verified",
+  "warning": "Static checks are not HTTP execution or verified Ground Truth."
+}

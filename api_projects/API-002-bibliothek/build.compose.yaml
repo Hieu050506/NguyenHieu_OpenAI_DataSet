@@ -1,0 +1,24 @@
+services:
+  build:
+    build:
+      context: ../../sources/WFD/scripts/build
+      dockerfile: Dockerfile.jdk17
+    working_dir: /build/jdk_17_gradle
+    environment:
+      BUILD_EVOMASTER: 'false'
+    volumes:
+    - ../../sources/WFD/jdk_17_gradle:/build/jdk_17_gradle
+    - ../../sources/WFD/dist:/dist
+    - maven-cache:/root/.m2
+    - gradle-cache:/root/.gradle
+    command:
+    - bash
+    - -lc
+    - 'set -e
+
+      gradle :cs:rest:bibliothek:build -x test -x spotlessCheck -x spotlessJavaCheck
+
+      cp cs/rest/bibliothek/build/libs/bibliothek-sut.jar /dist/'
+volumes:
+  maven-cache: {}
+  gradle-cache: {}

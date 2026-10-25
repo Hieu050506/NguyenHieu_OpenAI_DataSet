@@ -1,0 +1,66 @@
+[
+  {
+    "method": "GET",
+    "path": "/v2/projects",
+    "operation_id": "projects",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v2/projects/{project}",
+    "operation_id": "project",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v2/projects/{project}/versions/{version}",
+    "operation_id": "version",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v2/projects/{project}/versions/{version}/builds",
+    "operation_id": "builds",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v2/projects/{project}/versions/{version}/builds/{build}",
+    "operation_id": "build",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v2/projects/{project}/versions/{version}/builds/{build}/downloads/{download}",
+    "operation_id": "download",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v2/projects/{project}/version_group/{family}",
+    "operation_id": "family",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v2/projects/{project}/version_group/{family}/builds",
+    "operation_id": "familyBuilds",
+    "declared_statuses": [
+      "200"
+    ]
+  }
+]

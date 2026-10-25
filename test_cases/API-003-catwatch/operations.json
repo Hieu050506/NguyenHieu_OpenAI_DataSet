@@ -1,0 +1,263 @@
+[
+  {
+    "method": "GET",
+    "path": "/config",
+    "operation_id": "configUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/config/scoring.project",
+    "operation_id": "configScoringProjectsUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/contributors",
+    "operation_id": "contributorsGetUsingGET",
+    "declared_statuses": [
+      "0",
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/delete",
+    "operation_id": "deleteAllUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/error",
+    "operation_id": "errorHtmlUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "HEAD",
+    "path": "/error",
+    "operation_id": "errorHtmlUsingHEAD",
+    "declared_statuses": [
+      "200",
+      "204",
+      "401",
+      "403"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/error",
+    "operation_id": "errorHtmlUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/error",
+    "operation_id": "errorHtmlUsingPUT",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/error",
+    "operation_id": "errorHtmlUsingDELETE",
+    "declared_statuses": [
+      "200",
+      "204",
+      "401",
+      "403"
+    ]
+  },
+  {
+    "method": "OPTIONS",
+    "path": "/error",
+    "operation_id": "errorHtmlUsingOPTIONS",
+    "declared_statuses": [
+      "200",
+      "204",
+      "401",
+      "403"
+    ]
+  },
+  {
+    "method": "PATCH",
+    "path": "/error",
+    "operation_id": "errorHtmlUsingPATCH",
+    "declared_statuses": [
+      "200",
+      "204",
+      "401",
+      "403"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/export",
+    "operation_id": "exportJsonUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/fetch",
+    "operation_id": "fetchUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/health",
+    "operation_id": "invokeUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/health.json",
+    "operation_id": "invokeUsingGET_1",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/import",
+    "operation_id": "importJsonUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/init",
+    "operation_id": "initUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/languages",
+    "operation_id": "languagesGetUsingGET",
+    "declared_statuses": [
+      "0",
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/projects",
+    "operation_id": "projectsGetUsingGET",
+    "declared_statuses": [
+      "0",
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/statistics",
+    "operation_id": "statisticsGetUsingGET",
+    "declared_statuses": [
+      "0",
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/statistics/contributors",
+    "operation_id": "statisticsContributorGetUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/statistics/languages",
+    "operation_id": "statisticsLanguagesGetUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/statistics/projects",
+    "operation_id": "statisticsProjectGetUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  }
+]

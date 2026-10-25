@@ -1,0 +1,15 @@
+{
+  "project_id": "API-010-microcks",
+  "checked_at_utc": "2026-10-25T17:35:03.539590+00:00",
+  "source_integrity": "pass",
+  "integrity_errors": [],
+  "raw_spec_sha256": "ddf59aaa6ad34901b042457c89e0e3d9ae051f5c5626ddd3f55ddd321bc7c835",
+  "spec_structure": "invalid",
+  "spec_error": {
+    "type": "UnresolvableParameterError",
+    "message": "Path parameter 'id' for 'post' operation in '/api/jobs/{id}' was not resolved"
+  },
+  "operation_count": 88,
+  "runtime": "not_verified",
+  "warning": "Static checks are not HTTP execution or verified Ground Truth."
+}

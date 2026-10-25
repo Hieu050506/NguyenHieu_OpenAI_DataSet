@@ -1,0 +1,110 @@
+[
+  {
+    "method": "GET",
+    "path": "/api/persons",
+    "operation_id": "getPersons",
+    "declared_statuses": [
+      "500",
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/persons",
+    "operation_id": "putPerson",
+    "declared_statuses": [
+      "500",
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/persons",
+    "operation_id": "postPersons",
+    "declared_statuses": [
+      "500",
+      "201"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/persons",
+    "operation_id": "deletePersons",
+    "declared_statuses": [
+      "500",
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/person",
+    "operation_id": "putPerson_1",
+    "declared_statuses": [
+      "500",
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/person",
+    "operation_id": "postPerson",
+    "declared_statuses": [
+      "500",
+      "201"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/persons/{ids}",
+    "operation_id": "getPersons_1",
+    "declared_statuses": [
+      "500",
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/persons/{ids}",
+    "operation_id": "deletePersons_1",
+    "declared_statuses": [
+      "500",
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/persons/count",
+    "operation_id": "getCount",
+    "declared_statuses": [
+      "500",
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/persons/averageAge",
+    "operation_id": "averageAge",
+    "declared_statuses": [
+      "500",
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/person/{id}",
+    "operation_id": "getPerson",
+    "declared_statuses": [
+      "500",
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/person/{id}",
+    "operation_id": "deletePerson",
+    "declared_statuses": [
+      "500",
+      "200"
+    ]
+  }
+]

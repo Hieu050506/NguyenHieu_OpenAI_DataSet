@@ -1,0 +1,77 @@
+{
+  "status": "draft_from_unverified_spec",
+  "project_id": "API-015-quartz-manager",
+  "description": "Read-only local smoke candidates, not a complete CRUD or ground-truth test suite. Authenticated routes require explicit test credentials.",
+  "cases": [
+    {
+      "id": "SMOKE-01",
+      "method": "GET",
+      "path": "/quartz-manager/triggers",
+      "expected_statuses": [
+        200
+      ],
+      "declared_security": [
+        {
+          "quartz-manager-auth": []
+        }
+      ],
+      "executed": false
+    },
+    {
+      "id": "SMOKE-02",
+      "method": "GET",
+      "path": "/quartz-manager/scheduler",
+      "expected_statuses": [
+        200
+      ],
+      "declared_security": [
+        {
+          "quartz-manager-auth": []
+        }
+      ],
+      "executed": false
+    },
+    {
+      "id": "SMOKE-03",
+      "method": "GET",
+      "path": "/quartz-manager/scheduler/stop",
+      "expected_statuses": [
+        204
+      ],
+      "declared_security": [
+        {
+          "quartz-manager-auth": []
+        }
+      ],
+      "executed": false
+    },
+    {
+      "id": "SMOKE-04",
+      "method": "GET",
+      "path": "/quartz-manager/scheduler/run",
+      "expected_statuses": [
+        204
+      ],
+      "declared_security": [
+        {
+          "quartz-manager-auth": []
+        }
+      ],
+      "executed": false
+    },
+    {
+      "id": "SMOKE-05",
+      "method": "GET",
+      "path": "/quartz-manager/scheduler/resume",
+      "expected_statuses": [
+        204
+      ],
+      "declared_security": [
+        {
+          "quartz-manager-auth": []
+        }
+      ],
+      "executed": false
+    }
+  ]
+}

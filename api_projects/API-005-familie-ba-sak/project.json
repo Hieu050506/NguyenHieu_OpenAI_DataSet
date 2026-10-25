@@ -1,0 +1,32 @@
+{
+  "project_id": "API-005-familie-ba-sak",
+  "name": "Familie Ba Sak",
+  "slug": "familie-ba-sak",
+  "source_url": "https://github.com/navikt/familie-ba-sak",
+  "source_collection": "https://github.com/WebFuzzing/Dataset",
+  "collection_commit": "915859080da033fc36feae54bab3ad4a7b04e872",
+  "source_path": "sources/WFD/jdk_17_maven/cs/rest/familie-ba-sak",
+  "source_file_count": 1089,
+  "declared_license": "MIT",
+  "license_basis": "WFD README; preserved upstream notices; not a legal review",
+  "license_files": [
+    "sources/WFD/jdk_17_maven/cs/rest/familie-ba-sak/LICENSE"
+  ],
+  "language": "Kotlin",
+  "runtime": "JDK 17",
+  "build_tool": "Maven",
+  "database": "PostgreSQL",
+  "authentication_declared": "TRUE",
+  "http_port": 8105,
+  "auth_port": 9105,
+  "schema_endpoint_candidates": [
+    "/v3/api-docs"
+  ],
+  "raw_spec_sha256": "b40cff15493668b17751d762cf6a3a07239ee97be20fc85b5853217280db327f",
+  "raw_spec_version": "3.0.1",
+  "operation_count": 183,
+  "jar_source": "cs/rest/familie-ba-sak/target/familie-ba-sak-sut.jar",
+  "status": "imported_not_runtime_verified",
+  "raw_spec_hash_normalization": "CRLF to LF; otherwise original bytes",
+  "license_evidence_status": "source_notice_present"
+}

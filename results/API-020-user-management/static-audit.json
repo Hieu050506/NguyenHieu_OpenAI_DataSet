@@ -1,0 +1,12 @@
+{
+  "project_id": "API-020-user-management",
+  "checked_at_utc": "2026-10-25T17:35:07.886730+00:00",
+  "source_integrity": "pass",
+  "integrity_errors": [],
+  "raw_spec_sha256": "2a06d105821b54e7141534ca76f083e9bb112363ebf939b5e88912356a6b40a4",
+  "spec_structure": "valid",
+  "spec_error": null,
+  "operation_count": 21,
+  "runtime": "not_verified",
+  "warning": "Static checks are not HTTP execution or verified Ground Truth."
+}

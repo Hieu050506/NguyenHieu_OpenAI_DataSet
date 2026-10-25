@@ -1,0 +1,15 @@
+{
+  "project_id": "API-002-bibliothek",
+  "checked_at_utc": "2026-10-25T17:35:01.095254+00:00",
+  "source_integrity": "pass",
+  "integrity_errors": [],
+  "raw_spec_sha256": "48f2e156d856767271165d7c8a3470150c2a0357be595184d76095a9d96e0df9",
+  "spec_structure": "invalid",
+  "spec_error": {
+    "type": "OpenAPIValidationError",
+    "message": "'title' is a required property\n\nFailed validating 'required' in schema['properties']['info']:\n    {'type': 'object',\n     'required': ['title', 'version'],\n     'properties': {'title': {'type': 'string'},\n                    'description': {'type': 'string'},\n                    'termsOfService': {'type': 'string',\n                                       'format': 'uri-reference'},\n                    'contact': {'$ref': '#/definitions/Contact'},\n                    'license': {'$ref': '#/definitions/License'},\n                    'version': {'type': 'string'}},\n     'patternProperties': {'^x-': {}},\n     'additionalProperties': False}\n\nOn instance['info']:\n    {}"
+  },
+  "operation_count": 8,
+  "runtime": "not_verified",
+  "warning": "Static checks are not HTTP execution or verified Ground Truth."
+}

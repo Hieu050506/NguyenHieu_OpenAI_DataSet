@@ -1,0 +1,32 @@
+{
+  "project_id": "API-015-quartz-manager",
+  "name": "Quartz Manager",
+  "slug": "quartz-manager",
+  "source_url": "https://github.com/fabioformosa/quartz-manager",
+  "source_collection": "https://github.com/WebFuzzing/Dataset",
+  "collection_commit": "915859080da033fc36feae54bab3ad4a7b04e872",
+  "source_path": "sources/WFD/jdk_11_maven/cs/rest-gui/quartz-manager",
+  "source_file_count": 129,
+  "declared_license": "Apache",
+  "license_basis": "WFD README; preserved upstream notices; not a legal review",
+  "license_files": [
+    "sources/WFD/jdk_11_maven/cs/rest-gui/quartz-manager/LICENSE"
+  ],
+  "language": "Java",
+  "runtime": "JDK 11",
+  "build_tool": "Maven",
+  "database": "",
+  "authentication_declared": "TRUE",
+  "http_port": 8115,
+  "auth_port": 9115,
+  "schema_endpoint_candidates": [
+    "/v3/api-docs"
+  ],
+  "raw_spec_sha256": "2ca01332aba2ecd4758cf733108d22c8ebd2fe42059f8c12ae6c595f6338f752",
+  "raw_spec_version": "3.0.1",
+  "operation_count": 11,
+  "jar_source": "cs/rest-gui/quartz-manager/quartz-manager-parent/quartz-manager-web-showcase/target/quartz-manager-sut.jar",
+  "status": "imported_not_runtime_verified",
+  "raw_spec_hash_normalization": "CRLF to LF; otherwise original bytes",
+  "license_evidence_status": "source_notice_present"
+}

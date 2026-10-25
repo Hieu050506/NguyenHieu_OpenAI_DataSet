@@ -1,0 +1,24 @@
+services:
+  build:
+    build:
+      context: ../../sources/WFD/scripts/build
+      dockerfile: Dockerfile.jdk8
+    working_dir: /build/jdk_8_maven
+    environment:
+      BUILD_EVOMASTER: 'false'
+    volumes:
+    - ../../sources/WFD/jdk_8_maven:/build/jdk_8_maven
+    - ../../sources/WFD/dist:/dist
+    - maven-cache:/root/.m2
+    - gradle-cache:/root/.gradle
+    command:
+    - bash
+    - -lc
+    - 'set -e
+
+      mvn -f cs/pom.xml -pl rest/original/swagger-petstore -am install -DskipTests
+
+      cp cs/rest/original/swagger-petstore/target/swagger-petstore-sut.jar /dist/'
+volumes:
+  maven-cache: {}
+  gradle-cache: {}

@@ -1,0 +1,706 @@
+[
+  {
+    "method": "GET",
+    "path": "/rest/{service}/{version}/**",
+    "operation_id": "execute",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/rest/{service}/{version}/**",
+    "operation_id": "execute_3",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/rest/{service}/{version}/**",
+    "operation_id": "execute_2",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/rest/{service}/{version}/**",
+    "operation_id": "execute_5",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "OPTIONS",
+    "path": "/rest/{service}/{version}/**",
+    "operation_id": "execute_6",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "HEAD",
+    "path": "/rest/{service}/{version}/**",
+    "operation_id": "execute_1",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PATCH",
+    "path": "/rest/{service}/{version}/**",
+    "operation_id": "execute_4",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/rest-valid/{service}/{version}/**",
+    "operation_id": "validateAndExecute",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/rest-valid/{service}/{version}/**",
+    "operation_id": "validateAndExecute_3",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/rest-valid/{service}/{version}/**",
+    "operation_id": "validateAndExecute_2",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/rest-valid/{service}/{version}/**",
+    "operation_id": "validateAndExecute_5",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "OPTIONS",
+    "path": "/rest-valid/{service}/{version}/**",
+    "operation_id": "validateAndExecute_6",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "HEAD",
+    "path": "/rest-valid/{service}/{version}/**",
+    "operation_id": "validateAndExecute_1",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PATCH",
+    "path": "/rest-valid/{service}/{version}/**",
+    "operation_id": "validateAndExecute_4",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/graphql/{service}/{version}/**",
+    "operation_id": "execute_7",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/graphql/{service}/{version}/**",
+    "operation_id": "execute_8",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/dynarest/{service}/{version}/{resource}/{resourceId}",
+    "operation_id": "getResource",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/dynarest/{service}/{version}/{resource}/{resourceId}",
+    "operation_id": "updateResource",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/dynarest/{service}/{version}/{resource}/{resourceId}",
+    "operation_id": "deleteResource",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/services/{id}/operation",
+    "operation_id": "overrideServiceOperation",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/services/{id}/metadata",
+    "operation_id": "updateMetadata",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/secrets/{id}",
+    "operation_id": "getSecret",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/secrets/{id}",
+    "operation_id": "saveSecret",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/secrets/{id}",
+    "operation_id": "deleteService_1",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/jobs/{id}/stop",
+    "operation_id": "stopJob",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/jobs/{id}/start",
+    "operation_id": "startJob",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/jobs/{id}/activate",
+    "operation_id": "activateJob",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/soap/{service}/{version}/**",
+    "operation_id": "execute_9",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/mcp/{service}/{version}",
+    "operation_id": "handleHttpStreamable",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/mcp/{service}/{version}/message",
+    "operation_id": "handleMessage",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/dynarest/{service}/{version}/{resource}",
+    "operation_id": "findResources",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/dynarest/{service}/{version}/{resource}",
+    "operation_id": "createResource",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/tests",
+    "operation_id": "createTest",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/tests/{id}/testCaseResult",
+    "operation_id": "reportTestCaseResult",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/services/generic",
+    "operation_id": "createGenericResourceService",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/services/generic/event",
+    "operation_id": "createGenericEventService",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/secrets",
+    "operation_id": "listSecrets",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/secrets",
+    "operation_id": "createSecret",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/jobs",
+    "operation_id": "listJobs",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/jobs",
+    "operation_id": "createJob",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/jobs/{id}",
+    "operation_id": "getJob",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/jobs/{id}",
+    "operation_id": "saveJob",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/jobs/{id}",
+    "operation_id": "deleteJob",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/import",
+    "operation_id": "importRepository",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/copilot/samples/{id}",
+    "operation_id": "getSamplesSuggestions",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/copilot/samples/{id}",
+    "operation_id": "addSamplesSuggestions",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/copilot/samples/{id}/export",
+    "operation_id": "exportExchanges",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/copilot/samples/{id}/cleanup",
+    "operation_id": "removeExchanges",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/artifact/upload",
+    "operation_id": "importArtifact",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/artifact/download",
+    "operation_id": "importArtifact_1",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/mcp/{service}/{version}/sse",
+    "operation_id": "handleSSE",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/version/info",
+    "operation_id": "getConfig",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/tests/{id}",
+    "operation_id": "getTestResult",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/tests/{id}/messages/{testCaseId}",
+    "operation_id": "getMessagesForTestCase",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/tests/{id}/events/{testCaseId}",
+    "operation_id": "getEventMessagesForTestCase",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/tests/service/{serviceId}",
+    "operation_id": "listTestsByService",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/tests/service/{serviceId}/count",
+    "operation_id": "countTestsByService",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/services",
+    "operation_id": "listServices",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/services/{id}",
+    "operation_id": "getService",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/services/{id}",
+    "operation_id": "deleteService",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/services/search",
+    "operation_id": "searchServices",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/services/map",
+    "operation_id": "getServicesMap",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/services/labels",
+    "operation_id": "getServicesLabels",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/services/count",
+    "operation_id": "countServices",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/secrets/search",
+    "operation_id": "searchSecrets",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/secrets/count",
+    "operation_id": "countSecrets",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/resources/{serviceId}/{resourceType}",
+    "operation_id": "getServiceResource",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/resources/{name}",
+    "operation_id": "getResourceByName",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/resources/service/{serviceId}",
+    "operation_id": "getServiceResources",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/resources/id/{id}",
+    "operation_id": "getResourceById",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/metrics/tests/latest",
+    "operation_id": "getLatestTestResults",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/metrics/invocations/{service}/{version}",
+    "operation_id": "getInvocationStatForService",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/metrics/invocations/top",
+    "operation_id": "getInvocationTopStats",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/metrics/invocations/global",
+    "operation_id": "getInvocationStatGlobal",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/metrics/invocations/global/latest",
+    "operation_id": "getLatestInvocationStatGlobal",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/metrics/conformance/service/{serviceId}",
+    "operation_id": "getTestConformanceMetric",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/metrics/conformance/aggregate",
+    "operation_id": "getAggregatedTestCoverageMetrics",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/keycloak/config",
+    "operation_id": "getConfig_1",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/jobs/search",
+    "operation_id": "searchJobs",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/jobs/count",
+    "operation_id": "countJobs",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/health",
+    "operation_id": "health",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/genericresources/service/{serviceId}",
+    "operation_id": "listResources",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/genericresources/service/{serviceId}/count",
+    "operation_id": "countResources",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/features/config",
+    "operation_id": "getConfig_2",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/export",
+    "operation_id": "exportRepository",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/documentation/{name}/{resourceType}",
+    "operation_id": "getDocumentationByResourceName",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/documentation/id/{id}/{resourceType}",
+    "operation_id": "getDocumentationByResourceId",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/copilot/samples/task/{id}/status",
+    "operation_id": "getGenerationTaskStatus",
+    "declared_statuses": [
+      "200"
+    ]
+  }
+]

@@ -1,0 +1,1472 @@
+[
+  {
+    "method": "PUT",
+    "path": "/api/vilkaarsvurdering/{behandlingId}/{vilkaarId}",
+    "operation_id": "endreVilkår",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/vilkaarsvurdering/{behandlingId}/{vilkaarId}",
+    "operation_id": "slettVilkårsperiode",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/vilkaarsvurdering/{behandlingId}/annenvurdering/{annenVurderingId}",
+    "operation_id": "endreAnnenVurdering",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/vedtaksperioder/standardbegrunnelser/{vedtaksperiodeId}",
+    "operation_id": "oppdaterVedtaksperiodeStandardbegrunnelser",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/vedtaksperioder/fritekster/{vedtaksperiodeId}",
+    "operation_id": "oppdaterVedtaksperiodeMedFritekster",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/vedtaksperioder/endringstidspunkt",
+    "operation_id": "genererVedtaksperioderTilOgMedFørsteEndringstidspunkt",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/task/rekjor",
+    "operation_id": "rekjørTask",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/task/rekjorAlle",
+    "operation_id": "rekjørTasks",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/task/kommenter",
+    "operation_id": "kommenterTask",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/task/avvikshaandter",
+    "operation_id": "avvikshåndterTask",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/sett-på-vent/{behandlingId}",
+    "operation_id": "oppdaterSettBehandlingPåVent",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/sett-på-vent/{behandlingId}",
+    "operation_id": "settBehandlingPåVent",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/sett-på-vent/{behandlingId}/fortsettbehandling",
+    "operation_id": "gjenopptaBehandling",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/satsendring/{fagsakId}/kjor-satsendring-synkront",
+    "operation_id": "utførSatsendringSynkrontPåFagsak",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/refusjon-eøs/behandlinger/{behandlingId}/perioder/{id}",
+    "operation_id": "oppdaterRefusjonEøsPeriode",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/refusjon-eøs/behandlinger/{behandlingId}/perioder/{id}",
+    "operation_id": "fjernRefusjonEøsPeriode",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/preprod/{behandlingId}/fyll-ut-vilkarsvurdering",
+    "operation_id": "settFomPåTommeVilkårTilFødselsdato",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/kompetanse/{behandlingId}",
+    "operation_id": "oppdaterKompetanse",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/feilutbetalt-valuta/behandling/{behandlingId}/periode/{id}",
+    "operation_id": "oppdaterFeilutbetaltValutaPeriode",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/feilutbetalt-valuta/behandling/{behandlingId}/periode/{id}",
+    "operation_id": "fjernFeilutbetaltValutaPeriode",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/endretutbetalingandel/{behandlingId}/{endretUtbetalingAndelId}",
+    "operation_id": "oppdaterEndretUtbetalingAndelOgOppdaterTilkjentYtelse",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/endretutbetalingandel/{behandlingId}/{endretUtbetalingAndelId}",
+    "operation_id": "fjernEndretUtbetalingAndelOgOppdaterTilkjentYtelse",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/differanseberegning/valutakurs/{behandlingId}",
+    "operation_id": "oppdaterValutakurs",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/differanseberegning/utenlandskperidebeløp/{behandlingId}",
+    "operation_id": "oppdaterUtenlandskPeriodebeløp",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/behandlinger",
+    "operation_id": "opprettEllerOppdaterBehandlingFraHendelse",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/behandlinger",
+    "operation_id": "opprettBehandling",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/behandlinger/{behandlingId}/steg/henlegg",
+    "operation_id": "henleggBehandlingOgSendBrev",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/behandlinger/{behandlingId}/behandlingstema",
+    "operation_id": "endreBehandlingstema",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/arbeidsfordeling/{behandlingId}",
+    "operation_id": "endreBehandlendeEnhet",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/testverktoy/vedtak-om-overgangsstønad",
+    "operation_id": "mottaHendelseOmVedtakOmOvergangsstønad",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/internal/vedtak-om-overgangsstønad",
+    "operation_id": "mottaHendelseOmVedtakOmOvergangsstønad_1",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/testverktoy/foedselshendelse",
+    "operation_id": "mottaFødselshendelse",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/internal/foedselshendelse",
+    "operation_id": "mottaFødselshendelse_1",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/vilkaarsvurdering/{behandlingId}",
+    "operation_id": "nyttVilkår",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/tilgang",
+    "operation_id": "hentTilgangOgDiskresjonskode",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/tilbakekreving/{behandlingId}/forhandsvis-varselbrev",
+    "operation_id": "hentForhåndsvisningVarselbrev",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/stonadsstatistikk/vedtakV2",
+    "operation_id": "hentVedtakDvhV2",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/stonadsstatistikk/send-til-dvh",
+    "operation_id": "sendTilStønadsstatistikk",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/stonadsstatistikk/send-til-dvh-manuell",
+    "operation_id": "sendTilStønadsstatistikkManuell",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/stonadsstatistikk/ettersend-manuell-migrering/{dryRun}",
+    "operation_id": "ettersendManuellMigrereringer",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/småbarnstilleggkorrigering/behandling/{behandlingId}",
+    "operation_id": "leggTilSmåBarnstilleggPåBehandling",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/småbarnstilleggkorrigering/behandling/{behandlingId}",
+    "operation_id": "fjernSmåbarnstilleggFraMåned",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/skatt/perioder",
+    "operation_id": "hentPerioderMedUtvidetBarnetrygd",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/skatt/perioder/test",
+    "operation_id": "hentPerioderMedUtvidetBarnetrygdForMidlertidigTest",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/satsendring/saker-uten-sats",
+    "operation_id": "finnSakerUtenSisteSats",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/satsendring/kjorsatsendring",
+    "operation_id": "utførSatsendringITaskPåFagsaker",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/satsendring/kjorsatsendringForListeMedIdenter",
+    "operation_id": "utførSatsendringPåListeIdenter",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/satsendring/henleggBehandlingerMedLangFristSenereEnn/{valideringsdato}",
+    "operation_id": "henleggBehandlingerMedLangLiggetid",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/samhandler/navn",
+    "operation_id": "søkSamhandlerinfoFraNavn",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/saksstatistikk/registrer-sendt-fra-statistikk",
+    "operation_id": "registrerSendtFraStatistikk",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/refusjon-eøs/behandlinger/{behandlingId}",
+    "operation_id": "hentRefusjonEøsPerioder",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/refusjon-eøs/behandlinger/{behandlingId}",
+    "operation_id": "leggTilRefusjonEøsPeriode",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/person/registrer-manuell-dodsfall/{behandlingId}",
+    "operation_id": "registrerManuellDødsfallPåPerson",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/overgangsstonad",
+    "operation_id": "håndterVedtakOmOvergangsstønad",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/oppgave/{oppgaveId}/tilbakestill",
+    "operation_id": "tilbakestillFordelingPåOppgave",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/oppgave/{oppgaveId}/fordel",
+    "operation_id": "fordelOppgave",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/oppgave/{oppgaveId}/ferdigstillOgKnyttjournalpost",
+    "operation_id": "ferdigstillOppgaveOgKnyttJournalpostTilBehandling",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/oppgave/hent-oppgaver",
+    "operation_id": "hentOppgaver",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/oppgave/hent-frister-for-apne-utvidet-barnetrygd-behandlinger",
+    "operation_id": "hentFristerForÅpneUtvidetBarnetrygdBehandlinger",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/oppgave/fjern-behandles-av-applikasjon",
+    "operation_id": "fjernBehandlesAvApplikasjonFor",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/korrigertvedtak/behandling/{behandlingId}",
+    "operation_id": "opprettKorrigertVedtakPåBehandling",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/korrigertvedtak/behandling/{behandlingId}",
+    "operation_id": "settKorrigertVedtakTilInaktivPåBehandling",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/korrigertetterbetaling/behandling/{behandlingId}",
+    "operation_id": "hentAlleKorrigerteEtterbetalingPåBehandling",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/korrigertetterbetaling/behandling/{behandlingId}",
+    "operation_id": "opprettKorrigertEtterbetalingPåBehandling",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/korrigertetterbetaling/behandling/{behandlingId}",
+    "operation_id": "settKorrigertEtterbetalingTilInaktivPåBehandling",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/konsistensavstemming/run",
+    "operation_id": "kjørKonsistensavstemming",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/konsistensavstemming/dryrun",
+    "operation_id": "kjørKonsistensavstemmingUtenSendingTilØkonomi",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/klage/fagsaker/{fagsakId}/opprett-revurdering-klage/",
+    "operation_id": "opprettRevurderingKlage",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/journalpost/{journalpostId}/journalfør/{oppgaveId}",
+    "operation_id": "journalførV2",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/journalpost/for-bruker",
+    "operation_id": "hentJournalposterForBruker",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/infotrygd/hent-infotrygdstonader-for-soker",
+    "operation_id": "hentInfotrygdstønaderForSøker",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/infotrygd/hent-infotrygdsaker-for-soker",
+    "operation_id": "hentInfotrygdsakerForSøker",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/infotrygd/har-lopende-sak",
+    "operation_id": "harLøpendeSak",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ident",
+    "operation_id": "håndterPdlHendelse",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/forvalter/start-manuell-restart-av-smaabarnstillegg-jobb/skalOppretteOppgaver/{skalOppretteOppgaver}",
+    "operation_id": "triggManuellStartAvSmåbarnstillegg",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/forvalter/sjekkOmTilkjentYtelseForBehandlingHarUkorrektOpphørsdato",
+    "operation_id": "sjekkOmTilkjentYtelseForBehandlingHarUkorrektOpphørsdato",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/forvalter/sendKorrigertUtbetalingsoppdragForBehandlinger",
+    "operation_id": "sendKorrigertUtbetalingsoppdragForBehandlinger",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/forvalter/sendKorrigertUtbetalingsoppdragForBehandling/{behandlingId}/{versjon}",
+    "operation_id": "sendKorrigertUtbetalingsoppdragForBehandling",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/forvalter/populer-stonad-fom-tom/{behandlingId}",
+    "operation_id": "populerStønadFomTomForBehandling",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/forvalter/populer-stonad-fom-tom-alle/{limit}",
+    "operation_id": "populerStønadFomTom",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/forvalter/oppdaterLøpendeStatusPåFagsaker",
+    "operation_id": "oppdaterLøpendeStatusPåFagsaker",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/forvalter/lag-og-send-utbetalingsoppdrag-til-økonomi",
+    "operation_id": "lagOgSendUtbetalingsoppdragTilØkonomi",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/forvalter/kjor-satsendring-uten-validering",
+    "operation_id": "kjørSatsendringFor",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/forvalter/identifiser-utbetalinger-over-100-prosent",
+    "operation_id": "identifiserUtbetalingerOver100Prosent",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/forvalter/finnBehandlingerMedPotensieltFeilUtbetalingsoppdrag",
+    "operation_id": "identifiserBehandlingerSomKanKrevePatching",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/forvalter/ferdigstill-oppgaver",
+    "operation_id": "ferdigstillListeMedOppgaver",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/feilutbetalt-valuta/behandling/{behandlingId}",
+    "operation_id": "hentFeilutbetaltValutaPerioder",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/feilutbetalt-valuta/behandling/{behandlingId}",
+    "operation_id": "leggTilFeilutbetaltValutaPeriode",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/feature",
+    "operation_id": "hentToggles",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/fagsaker",
+    "operation_id": "hentEllerOpprettFagsak",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/fagsaker/{fagsakId}/opprett-klagebehandling",
+    "operation_id": "opprettKlage",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/fagsaker/sok",
+    "operation_id": "søkFagsak",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/fagsaker/sok/fagsaker-hvor-person-mottar-lopende-ytelse",
+    "operation_id": "søkFagsakerHvorPersonMottarLøpendeYtelse",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/fagsaker/sok/fagsaker-hvor-person-er-deltaker",
+    "operation_id": "søkFagsakerHvorPersonErSøkerEllerMottarOrdinærBarnetrygd",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/fagsaker/sok/fagsakdeltagere",
+    "operation_id": "oppgiFagsakdeltagere",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/fagsaker/hent-fagsaker-paa-person",
+    "operation_id": "hentMinimalFagsakerForPerson",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/fagsaker/hent-fagsak-paa-person",
+    "operation_id": "hentMinimalFagsakForPerson",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/endretutbetalingandel/{behandlingId}",
+    "operation_id": "lagreEndretUtbetalingAndelOgOppdaterTilkjentYtelse",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/endretutbetalingandel/{behandlingId}/tilbakestill",
+    "operation_id": "tilbakestillBehandlingTilBehandlingsresultat",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/ekstern/pensjon/hent-barnetrygd",
+    "operation_id": "hentBarnetrygd",
+    "declared_statuses": [
+      "500",
+      "400",
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/dokument/vedtaksbrev/{vedtakId}",
+    "operation_id": "hentVedtaksbrev",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/dokument/vedtaksbrev/{vedtakId}",
+    "operation_id": "genererVedtaksbrev",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/dokument/send-brev/{behandlingId}",
+    "operation_id": "sendBrev",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/dokument/forhaandsvis-brev/{behandlingId}",
+    "operation_id": "hentForhåndsvisning",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/dokument/fagsak/{fagsakId}/send-brev",
+    "operation_id": "sendBrevPåFagsak",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/dokument/fagsak/{fagsakId}/forhaandsvis-brev",
+    "operation_id": "hentForhåndsvisningPåFagsak",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/brevmottaker/{behandlingId}",
+    "operation_id": "hentBrevmottakere",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/brevmottaker/{behandlingId}",
+    "operation_id": "leggTilBrevmottaker",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/bisys/hent-utvidet-barnetrygd",
+    "operation_id": "hentUtvidetBarnetrygd",
+    "declared_statuses": [
+      "500",
+      "400",
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/behandlinger/{behandlingId}/steg/vilkårsvurdering",
+    "operation_id": "validerVilkårsvurdering",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/behandlinger/{behandlingId}/steg/tilbakekreving",
+    "operation_id": "lagreTilbakekrevingOgGåVidereTilNesteSteg",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/behandlinger/{behandlingId}/steg/send-til-beslutter",
+    "operation_id": "sendTilBeslutter",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/behandlinger/{behandlingId}/steg/registrer-søknad",
+    "operation_id": "registrereSøknadOgHentPersongrunnlag",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/behandlinger/{behandlingId}/steg/registrer-institusjon-og-verge",
+    "operation_id": "registerInstitusjonOgVerge",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/behandlinger/{behandlingId}/steg/iverksett-vedtak",
+    "operation_id": "iverksettVedtak",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/behandlinger/{behandlingId}/steg/behandlingsresultat",
+    "operation_id": "utledBehandlingsresultat",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/behandlinger/{behandlingId}/legg-til-barn",
+    "operation_id": "leggTilBarnIPersonopplysningsgrunnlag",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/internal/test-satsendring/{fagsakId}",
+    "operation_id": "utførSatsendringPåFagsak",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/testverktoy/test-satsendring/{fagsakId}",
+    "operation_id": "utførSatsendringPåFagsak_1",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/internal/ta-behandlinger-etter-ventefrist-av-vent",
+    "operation_id": "taBehandlingerEtterVentefristAvVent",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/testverktoy/ta-behandlinger-etter-ventefrist-av-vent",
+    "operation_id": "taBehandlingerEtterVentefristAvVent_1",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/testverktoy/redirect/behandling/{behandlingId}",
+    "operation_id": "redirectTilBarnetrygd",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/internal/redirect/behandling/{behandlingId}",
+    "operation_id": "redirectTilBarnetrygd_1",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/testverktoy/kjor-intern-konsistensavstemming/{maksAntallTasker}",
+    "operation_id": "kjørInternKonsistensavstemming",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/internal/kjor-intern-konsistensavstemming/{maksAntallTasker}",
+    "operation_id": "kjørInternKonsistensavstemming_1",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/testverktoy/hent-simulering-pa-behandling/{behandlingId}",
+    "operation_id": "hentSimuleringPåBehandling",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/internal/hent-simulering-pa-behandling/{behandlingId}",
+    "operation_id": "hentSimuleringPåBehandling_1",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/testverktoy/behandling/{behandlingId}/vedtaksperiodertest",
+    "operation_id": "hentVedtaksperioderTestPåBehandling",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/internal/behandling/{behandlingId}/vedtaksperiodertest",
+    "operation_id": "hentVedtaksperioderTestPåBehandling_1",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/testverktoy/behandling/{behandlingId}/begrunnelsetest",
+    "operation_id": "hentBegrunnelsetestPåBehandling",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/internal/behandling/{behandlingId}/begrunnelsetest",
+    "operation_id": "hentBegrunnelsetestPåBehandling_1",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/testverktoy/autobrev",
+    "operation_id": "kjørSchedulerForAutobrev",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/internal/autobrev",
+    "operation_id": "kjørSchedulerForAutobrev_1",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/vilkaarsvurdering/vilkaarsbegrunnelser",
+    "operation_id": "hentTeksterForVilkårsbegrunnelser",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/vedtaksperioder/brevbegrunnelser/{vedtaksperiodeId}",
+    "operation_id": "genererBrevBegrunnelserForPeriode",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/vedtaksperioder/behandling/{behandlingId}/hent-vedtaksperioder",
+    "operation_id": "hentRestUtvidetVedtaksperiodeMedBegrunnelser",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/tidslinjer/{behandlingId}",
+    "operation_id": "hentTidslinjer",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/task/{id}",
+    "operation_id": "taskMedId",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/task/v2",
+    "operation_id": "task2",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/task/logg/{id}",
+    "operation_id": "tasklogg",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/task/ferdigNaaFeiletFoer",
+    "operation_id": "tasksSomErFerdigNåMenFeiletFør",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/task/callId/{callId}",
+    "operation_id": "tasksForCallId",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/task/antall-til-oppfolging",
+    "operation_id": "antallTilOppfølging",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/skatt/personer",
+    "operation_id": "finnPersonerMedUtvidetBarnetrygd",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/skatt/personer/test",
+    "operation_id": "finnPersonerMedUtvidetBarnetrygdTest",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/satsendring/{fagsakId}/kan-kjore-satsendring",
+    "operation_id": "kanKjøreSatsendringPåFagsak",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/satsendring/kjorsatsendring/{fagsakId}",
+    "operation_id": "utførSatsendringITaskPåFagsak",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/samhandler/orgnr/{orgnr}",
+    "operation_id": "hentSamhandlerDataForOrganisasjon",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/saksstatistikk/sak/{fagsakId}",
+    "operation_id": "hentSakDvh",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/saksstatistikk/behandling/{behandlingId}",
+    "operation_id": "hentBehandlingDvh",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/person",
+    "operation_id": "hentPerson",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/person/oppdater-registeropplysninger/{behandlingId}",
+    "operation_id": "hentOgOppdaterRegisteropplysninger",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/person/enkel",
+    "operation_id": "hentPersonEnkel",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/person/adresse",
+    "operation_id": "hentPersonAdresse",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/oppgave/{oppgaveId}",
+    "operation_id": "hentDataForManuellJournalføring",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/oppgave/{oppgaveId}/ferdigstill",
+    "operation_id": "ferdigstillOppgave",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/logg/{behandlingId}",
+    "operation_id": "hentLoggForBehandling",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/klage/fagsaker/{fagsakId}/vedtak",
+    "operation_id": "hentVedtak",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/klage/fagsaker/{fagsakId}/kan-opprette-revurdering-klage",
+    "operation_id": "kanOppretteRevurderingKlage",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/journalpost/{journalpostId}/hent",
+    "operation_id": "hentJournalpost",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/journalpost/{journalpostId}/hent/{dokumentInfoId}",
+    "operation_id": "hentDokument",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/journalpost/{journalpostId}/dokument/{dokumentInfoId}",
+    "operation_id": "hentDokumentBytearray",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/internstatistikk",
+    "operation_id": "hentAntallFagsakerOpprettet",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/internstatistikk/antallSoknader",
+    "operation_id": "hentSøknadsstatistikkForPeriode",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/forvalter/finnÅpneFagsakerMedFlereMigreringsbehandlinger",
+    "operation_id": "finnÅpneFagsakerMedFlereMigreringsbehandlinger",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/forvalter/finnÅpneFagsakerMedFlereMigreringsbehandlingerOgLøpendeSakIInfotrygd",
+    "operation_id": "finnÅpneFagsakerMedFlereMigreringsbehandlingerOgLøpendeSakIInfotrygd",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/forvalter/finnFagsakerSomSkalAvsluttes",
+    "operation_id": "finnFagsakerSomSkalAvsluttes",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/fagsaker/{fagsakId}",
+    "operation_id": "hentRestFagsak",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/fagsaker/{fagsakId}/opprett-tilbakekreving",
+    "operation_id": "opprettTilbakekrevingsbehandling",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/fagsaker/{fagsakId}/hent-klagebehandlinger",
+    "operation_id": "hentKlagebehandlinger",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/fagsaker/{fagsakId}/har-apen-tilbakekreving",
+    "operation_id": "harÅpenTilbakekreving",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/fagsaker/minimal/{fagsakId}",
+    "operation_id": "hentMinimalFagsak",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/ekstern/pensjon/bestill-personer-med-barnetrygd/{år}",
+    "operation_id": "bestillPersonerMedBarnetrygdForGittÅrPåKafka",
+    "declared_statuses": [
+      "400",
+      "500",
+      "202"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/behandlinger/{behandlingId}",
+    "operation_id": "hentUtvidetBehandling",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/behandlinger/{behandlingId}/steg/behandlingsresultat/valider",
+    "operation_id": "validerBehandlingsresultat",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/behandlinger/{behandlingId}/simulering",
+    "operation_id": "hentSimulering",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/behandlinger/{behandlingId}/personer-med-ugyldig-etterbetalingsperiode",
+    "operation_id": "hentPersonerMedUgyldigEtterbetalingsperiode",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/behandlinger/{behandlingId}/endringstidspunkt",
+    "operation_id": "hentEndringstidspunkt",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/vilkaarsvurdering/{behandlingId}/vilkaar",
+    "operation_id": "slettVilkår",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/kompetanse/{behandlingId}/{kompetanseId}",
+    "operation_id": "slettKompetanse",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/differanseberegning/valutakurs/{behandlingId}/{valutakursId}",
+    "operation_id": "slettValutakurs",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/differanseberegning/utenlandskperidebeløp/{behandlingId}/{utenlandskPeriodebeløpId}",
+    "operation_id": "slettUtenlandskPeriodebeløp",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/brevmottaker/{behandlingId}/{mottakerId}",
+    "operation_id": "fjernBrevmottaker",
+    "declared_statuses": [
+      "200"
+    ]
+  }
+]

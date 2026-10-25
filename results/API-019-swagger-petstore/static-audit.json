@@ -1,0 +1,12 @@
+{
+  "project_id": "API-019-swagger-petstore",
+  "checked_at_utc": "2026-10-25T17:35:07.742858+00:00",
+  "source_integrity": "pass",
+  "integrity_errors": [],
+  "raw_spec_sha256": "f3daab5cbcd285a8431ed368c1cbe75053e3725c04e5377044a450b003f4226a",
+  "spec_structure": "valid",
+  "spec_error": null,
+  "operation_count": 19,
+  "runtime": "not_verified",
+  "warning": "Static checks are not HTTP execution or verified Ground Truth."
+}

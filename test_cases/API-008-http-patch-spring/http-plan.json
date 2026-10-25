@@ -1,0 +1,17 @@
+{
+  "status": "draft_from_unverified_spec",
+  "project_id": "API-008-http-patch-spring",
+  "description": "Read-only local smoke candidates, not a complete CRUD or ground-truth test suite. Authenticated routes require explicit test credentials.",
+  "cases": [
+    {
+      "id": "SMOKE-01",
+      "method": "GET",
+      "path": "/contacts",
+      "expected_statuses": [
+        200
+      ],
+      "declared_security": [],
+      "executed": false
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "project_id": "API-011-ocvn",
+  "name": "OCVN",
+  "slug": "ocvn",
+  "source_url": "https://github.com/devgateway/ocvn",
+  "source_collection": "https://github.com/WebFuzzing/Dataset",
+  "collection_commit": "915859080da033fc36feae54bab3ad4a7b04e872",
+  "source_path": "sources/WFD/jdk_8_maven/cs/rest-gui/ocvn",
+  "source_file_count": 515,
+  "declared_license": "MIT",
+  "license_basis": "WFD README; preserved upstream notices; not a legal review",
+  "license_files": [
+    "sources/WFD/jdk_8_maven/cs/rest-gui/ocvn/LICENSE",
+    "sources/WFD/jdk_8_maven/cs/rest-gui/ocvn/forms/src/main/java/org/devgateway/toolkit/forms/wicket/styles/assets/plugins/jquery.appear/LICENSE"
+  ],
+  "language": "Java",
+  "runtime": "JDK 8",
+  "build_tool": "Maven",
+  "database": "H2;MongoDB",
+  "authentication_declared": "TRUE",
+  "http_port": 8111,
+  "auth_port": 9111,
+  "schema_endpoint_candidates": [
+    "/v2/api-docs?group=1ocDashboardsApi"
+  ],
+  "raw_spec_sha256": "7b0bc65bb8d6769db7a332df79084b7db441273e82474201ac9f797bd0b7fde6",
+  "raw_spec_version": "2.0",
+  "operation_count": 192,
+  "jar_source": "cs/rest-gui/ocvn/web/target/ocvn-sut.jar",
+  "status": "imported_not_runtime_verified",
+  "raw_spec_hash_normalization": "CRLF to LF; otherwise original bytes",
+  "license_evidence_status": "source_notice_present"
+}

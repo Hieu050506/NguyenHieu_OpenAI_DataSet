@@ -1,0 +1,12 @@
+{
+  "project_id": "API-008-http-patch-spring",
+  "checked_at_utc": "2026-10-25T17:35:03.113048+00:00",
+  "source_integrity": "pass",
+  "integrity_errors": [],
+  "raw_spec_sha256": "6aa9b270d53febff46a5ea9cc296664b1a0e715c50697d9526345316456adcc7",
+  "spec_structure": "valid",
+  "spec_error": null,
+  "operation_count": 6,
+  "runtime": "not_verified",
+  "warning": "Static checks are not HTTP execution or verified Ground Truth."
+}

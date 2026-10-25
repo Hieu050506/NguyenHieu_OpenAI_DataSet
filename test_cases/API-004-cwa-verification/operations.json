@@ -1,0 +1,53 @@
+[
+  {
+    "method": "POST",
+    "path": "/version/v1/tan",
+    "operation_id": "generateTan",
+    "declared_statuses": [
+      "201",
+      "400",
+      "500"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/version/v1/testresult",
+    "operation_id": "getTestState",
+    "declared_statuses": [
+      "200",
+      "400",
+      "500"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/version/v1/registrationToken",
+    "operation_id": "generateRegistrationToken",
+    "declared_statuses": [
+      "201",
+      "400",
+      "500"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/version/v1/tan/teletan",
+    "operation_id": "createTeleTan",
+    "declared_statuses": [
+      "201",
+      "400",
+      "500"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/version/v1/tan/verify",
+    "operation_id": "verifyTan",
+    "declared_statuses": [
+      "200",
+      "400",
+      "404",
+      "500"
+    ]
+  }
+]

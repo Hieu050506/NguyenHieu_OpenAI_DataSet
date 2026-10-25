@@ -1,0 +1,32 @@
+{
+  "project_id": "API-008-http-patch-spring",
+  "name": "HTTP Patch Spring",
+  "slug": "http-patch-spring",
+  "source_url": "https://github.com/cassiomolin/http-patch-spring",
+  "source_collection": "https://github.com/WebFuzzing/Dataset",
+  "collection_commit": "915859080da033fc36feae54bab3ad4a7b04e872",
+  "source_path": "sources/WFD/jdk_11_maven/cs/rest/http-patch-spring",
+  "source_file_count": 30,
+  "declared_license": "MIT",
+  "license_basis": "WFD README; preserved upstream notices; not a legal review",
+  "license_files": [
+    "sources/WFD/jdk_11_maven/cs/rest/http-patch-spring/LICENSE"
+  ],
+  "language": "Java",
+  "runtime": "JDK 11",
+  "build_tool": "Maven",
+  "database": "",
+  "authentication_declared": "FALSE",
+  "http_port": 8108,
+  "auth_port": 9108,
+  "schema_endpoint_candidates": [
+    "/v3/api-docs"
+  ],
+  "raw_spec_sha256": "6aa9b270d53febff46a5ea9cc296664b1a0e715c50697d9526345316456adcc7",
+  "raw_spec_version": "3.0.1",
+  "operation_count": 6,
+  "jar_source": "cs/rest/http-patch-spring/target/http-patch-spring-sut.jar",
+  "status": "imported_not_runtime_verified",
+  "raw_spec_hash_normalization": "CRLF to LF; otherwise original bytes",
+  "license_evidence_status": "source_notice_present"
+}

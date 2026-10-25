@@ -1,0 +1,31 @@
+{
+  "project_id": "API-004-cwa-verification",
+  "name": "CWA-Verification-Server",
+  "slug": "cwa-verification",
+  "source_url": "https://github.com/corona-warn-app/cwa-verification-server",
+  "source_collection": "https://github.com/WebFuzzing/Dataset",
+  "collection_commit": "915859080da033fc36feae54bab3ad4a7b04e872",
+  "source_path": "sources/WFD/jdk_11_maven/cs/rest/cwa-verification-server",
+  "source_file_count": 58,
+  "declared_license": "Apache",
+  "license_basis": "WFD README; preserved upstream notices; not a legal review",
+  "license_files": [
+    "sources/WFD/jdk_11_maven/cs/rest/cwa-verification-server/LICENSE",
+    "sources/WFD/jdk_11_maven/cs/rest/cwa-verification-server/NOTICE"
+  ],
+  "language": "Java",
+  "runtime": "JDK 11",
+  "build_tool": "Maven",
+  "database": "H2",
+  "authentication_declared": "FALSE",
+  "http_port": 8104,
+  "auth_port": 9104,
+  "schema_endpoint_candidates": [],
+  "raw_spec_sha256": "24e000dd26121ac25f6f177e3e6062797cd63347737eb24d5d53e1d139c77a83",
+  "raw_spec_version": "3.0.1",
+  "operation_count": 5,
+  "jar_source": "cs/rest/cwa-verification-server/target/cwa-verification-sut.jar",
+  "status": "imported_not_runtime_verified",
+  "raw_spec_hash_normalization": "CRLF to LF; otherwise original bytes",
+  "license_evidence_status": "source_notice_present"
+}

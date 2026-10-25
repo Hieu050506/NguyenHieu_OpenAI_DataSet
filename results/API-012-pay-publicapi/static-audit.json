@@ -1,0 +1,12 @@
+{
+  "project_id": "API-012-pay-publicapi",
+  "checked_at_utc": "2026-10-25T17:35:06.533151+00:00",
+  "source_integrity": "pass",
+  "integrity_errors": [],
+  "raw_spec_sha256": "acb5c513e5d9b903621f43e5297086346267e52ed04827f7ca647566720795fc",
+  "spec_structure": "valid",
+  "spec_error": null,
+  "operation_count": 16,
+  "runtime": "not_verified",
+  "warning": "Static checks are not HTTP execution or verified Ground Truth."
+}

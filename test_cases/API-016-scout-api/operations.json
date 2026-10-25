@@ -1,0 +1,394 @@
+[
+  {
+    "method": "GET",
+    "path": "/v2/activities/{id}",
+    "operation_id": "get",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/v2/activities/{id}",
+    "operation_id": "update",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/v2/activities/{id}",
+    "operation_id": "delete",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "PATCH",
+    "path": "/v2/activities/{id}",
+    "operation_id": "patch",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v2/activities",
+    "operation_id": "all",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/v2/activities",
+    "operation_id": "create",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v2/activities/{id}/rating",
+    "operation_id": "getRating",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/v2/activities/{id}/rating",
+    "operation_id": "postRating",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/v2/activities/{id}/rating",
+    "operation_id": "deleteRating",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/media_files/{id}",
+    "operation_id": "get",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/v1/media_files/{id}",
+    "operation_id": "update",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/v1/media_files/{id}",
+    "operation_id": "delete",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/media_files",
+    "operation_id": "all",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/v1/media_files",
+    "operation_id": "create",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/media_files/{id}/file",
+    "operation_id": "downloadFile",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/system_messages/{id}",
+    "operation_id": "get",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/v1/system_messages/{id}",
+    "operation_id": "update",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/v1/system_messages/{id}",
+    "operation_id": "delete",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/system_messages",
+    "operation_id": "all",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/v1/system_messages",
+    "operation_id": "create",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/system/roles",
+    "operation_id": "roles",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/system/ping",
+    "operation_id": "ping",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v2/tags/{id}",
+    "operation_id": "get",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/v2/tags/{id}",
+    "operation_id": "update",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/v2/tags/{id}",
+    "operation_id": "delete",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v2/tags",
+    "operation_id": "all",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/v2/tags",
+    "operation_id": "create",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/users/{id}",
+    "operation_id": "get",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/v1/users/{id}",
+    "operation_id": "update",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/v1/users/{id}",
+    "operation_id": "delete",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/users/profile",
+    "operation_id": "profile",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/users",
+    "operation_id": "all",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/v1/users",
+    "operation_id": "create",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/activities/{id}",
+    "operation_id": "get_1",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/v1/activities/{id}",
+    "operation_id": "update_1",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/v1/activities/{id}",
+    "operation_id": "delete_1",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "PATCH",
+    "path": "/v1/activities/{id}",
+    "operation_id": "patch_1",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/activities",
+    "operation_id": "all",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/v1/activities",
+    "operation_id": "create_1",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/activities/{id}/rating",
+    "operation_id": "getRating_1",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/v1/activities/{id}/rating",
+    "operation_id": "postRating_1",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/v1/activities/{id}/rating",
+    "operation_id": "deleteRating_1",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/categories/{id}",
+    "operation_id": "get_2",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/v1/categories/{id}",
+    "operation_id": "update_2",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/v1/categories/{id}",
+    "operation_id": "delete_2",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/categories",
+    "operation_id": "all_1",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/v1/categories",
+    "operation_id": "create_2",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/v1/favourites",
+    "operation_id": "get",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/v1/favourites",
+    "operation_id": "put",
+    "declared_statuses": [
+      "default"
+    ]
+  }
+]

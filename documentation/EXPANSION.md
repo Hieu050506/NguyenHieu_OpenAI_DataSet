@@ -1,6 +1,8 @@
 # Tiếp nhận project thứ 2 đến 20
 
-Hiện có 1 project: API-001-Bookstore. Không tạo các project trống để đủ số lượng.
+Hiện có **20 project có mã nguồn và hồ sơ**: API-001-Bookstore đã kiểm thử,
+API-002 đến API-020 được nhập từ WFD và **chưa xác minh runtime**.
+Xem `WFD.md`, `DATASET_STATUS.md` và `dataset.csv` để phân biệt các trạng thái.
 Phân bổ giữa ba đề tài cần được nhóm xác nhận theo mục tiêu nghiên cứu; tài liệu hiện tại chưa nêu tên ba đề tài.
 
 Với mỗi repository mới:
@@ -17,5 +19,5 @@ Với mỗi repository mới:
 10. Cho thành viên khác tái lập; ghi kết quả review. Cập nhật dataset.csv sau khi hồ sơ đầy đủ.
 
 Mỗi project phải có đủ source, ground_truth, test_cases, results và documentation.
-Danh mục cần phân biệt `candidate`, `running`, `verified_with_known_limitations`, `reviewed`, `rejected`.
+Danh mục cần phân biệt `candidate`, `imported_not_runtime_verified`, `running`, `verified_with_known_limitations`, `reviewed`, `rejected`.
 Số lượng project đã xác minh được tính bằng số hồ sơ đầy đủ và đạt kiểm tra, không phải số repository đã tải.

@@ -1,0 +1,242 @@
+[
+  {
+    "method": "POST",
+    "path": "/login",
+    "operation_id": "loginUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/users",
+    "operation_id": "getUserPresentationListUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/users",
+    "operation_id": "createUserUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/users/rbac/permissions",
+    "operation_id": "getPermissionPresentationListUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/users/rbac/permissions",
+    "operation_id": "createPermissionUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/users/rbac/permissions",
+    "operation_id": "updatePermissionUsingPUT",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/users/rbac/permissions/{permissionKey}",
+    "operation_id": "getPermissionByKeyUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/users/rbac/permissions/{permissionKey}",
+    "operation_id": "deletePermissionByKeyUsingDELETE",
+    "declared_statuses": [
+      "200",
+      "204",
+      "401",
+      "403"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/users/rbac/roles",
+    "operation_id": "getRolePresentationListUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/users/rbac/roles",
+    "operation_id": "createRoleUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/users/rbac/roles/{roleId}",
+    "operation_id": "getRoleByIdUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/users/rbac/roles/{roleId}",
+    "operation_id": "deleteRoleByIdUsingDELETE",
+    "declared_statuses": [
+      "200",
+      "204",
+      "401",
+      "403"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/users/rbac/roles/{roleId}/permissions/{permissionKey}",
+    "operation_id": "addPermissionOnRoleUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/users/rbac/roles/{roleId}/permissions/{permissionKey}",
+    "operation_id": "removePermissionOnRoleUsingDELETE",
+    "declared_statuses": [
+      "200",
+      "204",
+      "401",
+      "403"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/users/rbac/salt",
+    "operation_id": "generateSaltUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/users/register",
+    "operation_id": "registerNewUserAccountUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/users/{id}",
+    "operation_id": "getUserByIdUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/users/{id}",
+    "operation_id": "updateUserUsingPUT",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/users/{id}",
+    "operation_id": "deleteByIdUsingDELETE",
+    "declared_statuses": [
+      "200",
+      "204",
+      "401",
+      "403"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/users/{id}/roles/{roleId}",
+    "operation_id": "addRoleUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/users/{id}/roles/{roleId}",
+    "operation_id": "removeRoleUsingDELETE",
+    "declared_statuses": [
+      "200",
+      "204",
+      "401",
+      "403"
+    ]
+  }
+]

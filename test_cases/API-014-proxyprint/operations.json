@@ -1,0 +1,1311 @@
+[
+  {
+    "method": "GET",
+    "path": "/",
+    "operation_id": "indexUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "OPTIONS",
+    "path": "/*",
+    "operation_id": "handleOptionsUsingOPTIONS",
+    "declared_statuses": [
+      "200",
+      "401",
+      "204",
+      "403"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/admin/printshops",
+    "operation_id": "getPrinShopsListUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/admin/register",
+    "operation_id": "newAdminUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/admin/seed",
+    "operation_id": "seedUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/admin/useed",
+    "operation_id": "useedUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/secured",
+    "operation_id": "securedUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/autoconfig",
+    "operation_id": "invokeUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/autoconfig.json",
+    "operation_id": "invokeUsingGET_1",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/beans",
+    "operation_id": "invokeUsingGET_2",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/beans.json",
+    "operation_id": "invokeUsingGET_3",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/configprops",
+    "operation_id": "invokeUsingGET_4",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/configprops.json",
+    "operation_id": "invokeUsingGET_5",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/consumer/balance",
+    "operation_id": "getConsumerBalanceUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/consumer/budget",
+    "operation_id": "calcBudgetForPrintRequestUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/consumer/info",
+    "operation_id": "getConsumerInfoUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/consumer/info/update",
+    "operation_id": "updateConsumerInfoUsingPUT",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/consumer/notifications",
+    "operation_id": "getConsumerNotificationsUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/consumer/printrequest/{printRequestID}/submit",
+    "operation_id": "finishAndSubmitPrintRequestUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/consumer/register",
+    "operation_id": "addUserUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/consumer/requests",
+    "operation_id": "getRequestsUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/consumer/requests/cancel/{id}",
+    "operation_id": "cancelRequestsUsingDELETE",
+    "declared_statuses": [
+      "200",
+      "401",
+      "204",
+      "403"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/consumer/satisfied",
+    "operation_id": "getPrintShopSatisfiedRequestsUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/consumer/subscribe",
+    "operation_id": "subscribeUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "HEAD",
+    "path": "/consumer/subscribe",
+    "operation_id": "subscribeUsingHEAD",
+    "declared_statuses": [
+      "200",
+      "401",
+      "204",
+      "403"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/consumer/subscribe",
+    "operation_id": "subscribeUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/consumer/subscribe",
+    "operation_id": "subscribeUsingPUT",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/consumer/subscribe",
+    "operation_id": "subscribeUsingDELETE",
+    "declared_statuses": [
+      "200",
+      "401",
+      "204",
+      "403"
+    ]
+  },
+  {
+    "method": "OPTIONS",
+    "path": "/consumer/subscribe",
+    "operation_id": "subscribeUsingOPTIONS",
+    "declared_statuses": [
+      "200",
+      "401",
+      "204",
+      "403"
+    ]
+  },
+  {
+    "method": "PATCH",
+    "path": "/consumer/subscribe",
+    "operation_id": "subscribeUsingPATCH",
+    "declared_statuses": [
+      "200",
+      "401",
+      "204",
+      "403"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/consumer/{consumerID}/printingschemas",
+    "operation_id": "getConsumerPrintingSchemasUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/consumer/{consumerID}/printingschemas",
+    "operation_id": "addNewConsumerPrintingSchemaUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/consumer/{consumerID}/printingschemas/{printingSchemaID}",
+    "operation_id": "editConsumerPrintingSchemaUsingPUT",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/consumer/{consumerID}/printingschemas/{printingSchemaID}",
+    "operation_id": "deleteConsumerPrintingSchemaUsingDELETE",
+    "declared_statuses": [
+      "200",
+      "401",
+      "204",
+      "403"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/consumer/{id}/notify",
+    "operation_id": "greetingUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/consumer/{username}/notifications",
+    "operation_id": "readAllNotificationsUsingPUT",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/consumer/{username}/notifications",
+    "operation_id": "deleteAllNotificationsUsingDELETE",
+    "declared_statuses": [
+      "200",
+      "401",
+      "204",
+      "403"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/documents/{id}",
+    "operation_id": "getEmployeesUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/dump",
+    "operation_id": "invokeUsingGET_6",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/dump.json",
+    "operation_id": "invokeUsingGET_7",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/env",
+    "operation_id": "invokeUsingGET_14",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/env.json",
+    "operation_id": "invokeUsingGET_15",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/env/{name}",
+    "operation_id": "valueUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/error",
+    "operation_id": "errorUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "HEAD",
+    "path": "/error",
+    "operation_id": "errorUsingHEAD",
+    "declared_statuses": [
+      "200",
+      "401",
+      "204",
+      "403"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/error",
+    "operation_id": "errorUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/error",
+    "operation_id": "errorUsingPUT",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/error",
+    "operation_id": "errorUsingDELETE",
+    "declared_statuses": [
+      "200",
+      "401",
+      "204",
+      "403"
+    ]
+  },
+  {
+    "method": "OPTIONS",
+    "path": "/error",
+    "operation_id": "errorUsingOPTIONS",
+    "declared_statuses": [
+      "200",
+      "401",
+      "204",
+      "403"
+    ]
+  },
+  {
+    "method": "PATCH",
+    "path": "/error",
+    "operation_id": "errorUsingPATCH",
+    "declared_statuses": [
+      "200",
+      "401",
+      "204",
+      "403"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/health",
+    "operation_id": "invokeUsingGET_16",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "HEAD",
+    "path": "/health",
+    "operation_id": "invokeUsingHEAD",
+    "declared_statuses": [
+      "200",
+      "401",
+      "204",
+      "403"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/health",
+    "operation_id": "invokeUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/health",
+    "operation_id": "invokeUsingPUT",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/health",
+    "operation_id": "invokeUsingDELETE",
+    "declared_statuses": [
+      "200",
+      "401",
+      "204",
+      "403"
+    ]
+  },
+  {
+    "method": "OPTIONS",
+    "path": "/health",
+    "operation_id": "invokeUsingOPTIONS",
+    "declared_statuses": [
+      "200",
+      "401",
+      "204",
+      "403"
+    ]
+  },
+  {
+    "method": "PATCH",
+    "path": "/health",
+    "operation_id": "invokeUsingPATCH",
+    "declared_statuses": [
+      "200",
+      "401",
+      "204",
+      "403"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/health.json",
+    "operation_id": "invokeUsingGET_17",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "HEAD",
+    "path": "/health.json",
+    "operation_id": "invokeUsingHEAD_1",
+    "declared_statuses": [
+      "200",
+      "401",
+      "204",
+      "403"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/health.json",
+    "operation_id": "invokeUsingPOST_1",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/health.json",
+    "operation_id": "invokeUsingPUT_1",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/health.json",
+    "operation_id": "invokeUsingDELETE_1",
+    "declared_statuses": [
+      "200",
+      "401",
+      "204",
+      "403"
+    ]
+  },
+  {
+    "method": "OPTIONS",
+    "path": "/health.json",
+    "operation_id": "invokeUsingOPTIONS_1",
+    "declared_statuses": [
+      "200",
+      "401",
+      "204",
+      "403"
+    ]
+  },
+  {
+    "method": "PATCH",
+    "path": "/health.json",
+    "operation_id": "invokeUsingPATCH_1",
+    "declared_statuses": [
+      "200",
+      "401",
+      "204",
+      "403"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/info",
+    "operation_id": "invokeUsingGET_8",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/info.json",
+    "operation_id": "invokeUsingGET_9",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/login",
+    "operation_id": "loginUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/mappings",
+    "operation_id": "invokeUsingGET_10",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/mappings.json",
+    "operation_id": "invokeUsingGET_11",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/metrics",
+    "operation_id": "invokeUsingGET_18",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/metrics.json",
+    "operation_id": "invokeUsingGET_19",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/metrics/{name}",
+    "operation_id": "valueUsingGET_1",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/notifications/{notificationId}",
+    "operation_id": "readNotificationUsingPUT",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/notifications/{notificationId}",
+    "operation_id": "deleteNotificationUsingDELETE",
+    "declared_statuses": [
+      "200",
+      "401",
+      "204",
+      "403"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/paypal/ipn/consumer/{consumerID}",
+    "operation_id": "consumerLoadUpConfirmationUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/paypal/ipn/{printRequestID}",
+    "operation_id": "someRequestPaymentConfirmationFromPaylPalUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/printdocument",
+    "operation_id": "printDocumentUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/printdocument/{id}",
+    "operation_id": "getDocumentUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/printdocument/{id}/budget",
+    "operation_id": "calcBudgetForPrintRecipeUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/printshop",
+    "operation_id": "getManagerPrintShopUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/printshops",
+    "operation_id": "getPrintShopsUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/printshops/history",
+    "operation_id": "getPrintShopHistoryRequestsUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/printshops/nearest",
+    "operation_id": "getNearestPrintShopsUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/printshops/requests",
+    "operation_id": "getPrintShopRequestsUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/printshops/requests/cancel/{id}",
+    "operation_id": "cancelPrintShopRequestsUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/printshops/requests/{id}",
+    "operation_id": "getPrintShopRequestUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/printshops/requests/{id}",
+    "operation_id": "changeStatusPrintShopRequestsUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/printshops/satisfied",
+    "operation_id": "getPrintShopSatisfiedRequestsUsingGET_1",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/printshops/stats",
+    "operation_id": "getPrintShopStatisticsUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/printshops/{id}",
+    "operation_id": "getPrintShopUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/printshops/{id}/pricetable",
+    "operation_id": "getPrintShopPriceTableUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/printshops/{id}/pricetable/covers",
+    "operation_id": "addNewCoverItemUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/printshops/{id}/pricetable/covers",
+    "operation_id": "editCoverItemUsingPUT",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/printshops/{id}/pricetable/deletecover",
+    "operation_id": "deleteCoverItemUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/printshops/{id}/pricetable/deletepaper",
+    "operation_id": "deletePaperItemUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/printshops/{id}/pricetable/deletering",
+    "operation_id": "deleteRingItemUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/printshops/{id}/pricetable/papers",
+    "operation_id": "addNewPaperItemUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/printshops/{id}/pricetable/papers",
+    "operation_id": "editPaperItemUsingPUT",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/printshops/{id}/pricetable/rings",
+    "operation_id": "addNewRingsItemUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/printshops/{id}/pricetable/rings",
+    "operation_id": "editRingsItemUsingPUT",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/printshops/{id}/reviews",
+    "operation_id": "getPrintShopReviewsUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/printshops/{id}/reviews",
+    "operation_id": "addPrintShopReviewUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/printshops/{printShopID}/employees",
+    "operation_id": "getEmployeesUsingGET_1",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/printshops/{printShopID}/employees",
+    "operation_id": "addEmployeeUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/printshops/{printShopID}/employees",
+    "operation_id": "editEmployeeUsingPUT",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/printshops/{printShopID}/employees/{employeeID}",
+    "operation_id": "deleteEmployeeUsingDELETE",
+    "declared_statuses": [
+      "200",
+      "401",
+      "204",
+      "403"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/printshops/{printShopID}/pricetable/editstapling",
+    "operation_id": "editStaplingPriceUsingPUT",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/printshops/{printShopId}/reviews/{reviewId}",
+    "operation_id": "editPrintShopReviewUsingPUT",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/printshops/{printShopId}/reviews/{reviewId}",
+    "operation_id": "deletePrintShopReviewUsingDELETE",
+    "declared_statuses": [
+      "200",
+      "401",
+      "204",
+      "403"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/request/accept/{id}",
+    "operation_id": "acceptRequestUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/request/register",
+    "operation_id": "registerRequestUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/request/reject/{printRequestID}",
+    "operation_id": "rejectRequestUsingPOST",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/requests/pending",
+    "operation_id": "acceptRequestUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/trace",
+    "operation_id": "invokeUsingGET_12",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/trace.json",
+    "operation_id": "invokeUsingGET_13",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  }
+]

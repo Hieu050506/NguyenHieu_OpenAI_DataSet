@@ -1,0 +1,32 @@
+{
+  "project_id": "API-018-spring-rest-example",
+  "name": "Spring Boot Restful API Example",
+  "slug": "spring-rest-example",
+  "source_url": "https://github.com/phantasmicmeans/spring-boot-restful-api-example",
+  "source_collection": "https://github.com/WebFuzzing/Dataset",
+  "collection_commit": "915859080da033fc36feae54bab3ad4a7b04e872",
+  "source_path": "sources/WFD/jdk_17_maven/cs/rest/spring-rest-example",
+  "source_file_count": 32,
+  "declared_license": "MIT",
+  "license_basis": "WFD README; preserved upstream notices; not a legal review",
+  "license_files": [
+    "sources/WFD/jdk_17_maven/cs/rest/spring-rest-example/LICENSE"
+  ],
+  "language": "Java",
+  "runtime": "JDK 17",
+  "build_tool": "Maven",
+  "database": "MySQL",
+  "authentication_declared": "FALSE",
+  "http_port": 8118,
+  "auth_port": 9118,
+  "schema_endpoint_candidates": [
+    "/v3/api-docs"
+  ],
+  "raw_spec_sha256": "5f550a2e1a56f0996cfcf989991f77cbe0c76af2f567dc26ce9ac73fae68ba59",
+  "raw_spec_version": "3.0.1",
+  "operation_count": 9,
+  "jar_source": "cs/rest/spring-rest-example/target/spring-rest-example-sut.jar",
+  "status": "imported_not_runtime_verified",
+  "raw_spec_hash_normalization": "CRLF to LF; otherwise original bytes",
+  "license_evidence_status": "source_notice_present"
+}

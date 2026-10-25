@@ -6,3 +6,6 @@
 **/.pytest_cache/
 .env
 **/.env
+**/traffic/
+**/build-status.json
+**/smoke-results.json

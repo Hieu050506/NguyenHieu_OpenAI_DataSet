@@ -1,0 +1,6 @@
+{
+  "status": "draft_from_unverified_spec",
+  "project_id": "API-018-spring-rest-example",
+  "description": "Read-only local smoke candidates, not a complete CRUD or ground-truth test suite. Authenticated routes require explicit test credentials.",
+  "cases": []
+}

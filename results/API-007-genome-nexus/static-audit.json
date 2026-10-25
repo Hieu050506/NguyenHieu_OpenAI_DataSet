@@ -1,0 +1,15 @@
+{
+  "project_id": "API-007-genome-nexus",
+  "checked_at_utc": "2026-10-25T17:35:02.981548+00:00",
+  "source_integrity": "pass",
+  "integrity_errors": [],
+  "raw_spec_sha256": "f9c56d50feef581f6a7aa37ca8cd3b9d4ccb6abf3be0f832a31ba82d02497125",
+  "spec_structure": "invalid",
+  "spec_error": {
+    "type": "OpenAPIValidationError",
+    "message": "'hotspots' is not of type 'array'\n\nFailed validating 'type' in schema:\n    {'name': 'fields',\n     'in': 'query',\n     'description': 'Comma separated list of fields to include '\n                    '(case-sensitive!). For example: hotspots',\n     'required': False,\n     'type': 'array',\n     'items': {'type': 'string'},\n     'collectionFormat': 'multi',\n     'default': 'hotspots'}\n\nOn instance:\n    'hotspots'"
+  },
+  "operation_count": 23,
+  "runtime": "not_verified",
+  "warning": "Static checks are not HTTP execution or verified Ground Truth."
+}

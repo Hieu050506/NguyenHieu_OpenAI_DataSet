@@ -1,0 +1,148 @@
+[
+  {
+    "method": "GET",
+    "path": "/customer",
+    "operation_id": "getCustomerUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/customer/cart",
+    "operation_id": "getCartUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/customer/cart",
+    "operation_id": "addItemUsingPUT",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/customer/cart",
+    "operation_id": "clearCartUsingDELETE",
+    "declared_statuses": [
+      "200",
+      "204",
+      "401",
+      "403"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/customer/cart/delivery",
+    "operation_id": "setDeliveryUsingPUT",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/customer/cart/pay",
+    "operation_id": "payByCardUsingPOST",
+    "declared_statuses": [
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/customer/contacts",
+    "operation_id": "getContactsUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/customer/contacts",
+    "operation_id": "updateContactsUsingPUT",
+    "declared_statuses": [
+      "200",
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/customer/orders",
+    "operation_id": "getOrdersUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/customer/orders/{orderId}",
+    "operation_id": "getOrderUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/products",
+    "operation_id": "getProductsUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/products/{productId}",
+    "operation_id": "getProductUsingGET",
+    "declared_statuses": [
+      "200",
+      "401",
+      "403",
+      "404"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/register",
+    "operation_id": "createCustomerUsingPOST",
+    "declared_statuses": [
+      "201",
+      "401",
+      "403",
+      "404"
+    ]
+  }
+]

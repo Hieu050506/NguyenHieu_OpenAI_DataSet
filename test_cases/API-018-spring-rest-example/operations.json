@@ -1,0 +1,74 @@
+[
+  {
+    "method": "GET",
+    "path": "/api/project/{code}",
+    "operation_id": "getProject",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/api/project/{code}",
+    "operation_id": "updateProject",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/project/{code}",
+    "operation_id": "deleteProject",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/subproblem",
+    "operation_id": "saveSubProblem",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/project",
+    "operation_id": "createProject",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/problem/{code}",
+    "operation_id": "getProblemByCode",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/problem/{code}",
+    "operation_id": "saveProblem",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/problem/{code}",
+    "operation_id": "deleteProblem",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/problem/{code}/all",
+    "operation_id": "deleteAllProblem",
+    "declared_statuses": [
+      "200"
+    ]
+  }
+]

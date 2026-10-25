@@ -1,0 +1,12 @@
+{
+  "project_id": "API-009-market",
+  "checked_at_utc": "2026-10-25T17:35:03.267669+00:00",
+  "source_integrity": "pass",
+  "integrity_errors": [],
+  "raw_spec_sha256": "cf51a9d511b970fd51bce1206eb9429024c11eb180ada58b43193bcb5883c3cd",
+  "spec_structure": "valid",
+  "spec_error": null,
+  "operation_count": 13,
+  "runtime": "not_verified",
+  "warning": "Static checks are not HTTP execution or verified Ground Truth."
+}

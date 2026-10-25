@@ -2,10 +2,8 @@ param([string]$PythonExe = '')
 $ErrorActionPreference = 'Stop'
 $datasetRoot = Split-Path -Parent $PSScriptRoot
 $projectRoot = Join-Path $datasetRoot 'api_projects\API-001-Bookstore'
-if (-not (Test-Path -LiteralPath (Join-Path $projectRoot 'src\app.py'))) {
-    & git -C $datasetRoot submodule update --init --recursive
-    if ($LASTEXITCODE -ne 0) { throw 'Khong tai duoc source. Kiem tra ket noi GitHub.' }
-}
+& git -C $datasetRoot submodule update --init --recursive
+if ($LASTEXITCODE -ne 0) { throw 'Khong tai duoc source submodules. Kiem tra ket noi GitHub va thu muc Git.' }
 if (-not $PythonExe) {
     $PythonExe = Join-Path $env:LOCALAPPDATA 'Programs\Python\Python312\python.exe'
 }

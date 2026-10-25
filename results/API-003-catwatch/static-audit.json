@@ -1,0 +1,15 @@
+{
+  "project_id": "API-003-catwatch",
+  "checked_at_utc": "2026-10-25T17:35:01.392633+00:00",
+  "source_integrity": "pass",
+  "integrity_errors": [],
+  "raw_spec_sha256": "a57c28730993b6f2bdc8f0436e54344ed2a45b22eb06136a492d62142d0b20cb",
+  "spec_structure": "invalid",
+  "spec_error": {
+    "type": "OpenAPIValidationError",
+    "message": "'0' does not match any of the regexes: '^([0-9]{3})$|^(default)$', '^x-'\n\nFailed validating 'additionalProperties' in schema['properties']['paths']['patternProperties']['^/']['properties']['get']['properties']['responses']:\n    {'type': 'object',\n     'description': 'Response objects names can either be any valid HTTP '\n                    \"status code or 'default'.\",\n     'minProperties': 1,\n     'additionalProperties': False,\n     'patternProperties': {'^([0-9]{3})$|^(default)$': {'$ref': '#/definitions/responseValue'},\n                           '^x-': {'$ref': '#/definitions/vendorExtension'}},\n     'not': {'type': 'object',\n             'additionalProperties': False,\n             'patternProperties': {'^x-': {'$ref': '#/definitions/vendorExtension'}}}}\n\nOn instance['paths']['/contributors']['get']['responses']:\n    {'0': {'description': 'Unexpected error'},\n     '200': {'description': 'An array of Contributors of selected Github '\n                            'organization',\n             'schema': {'type': 'array',\n                        'items': {'$ref': '#/definitions/Contributor'}}},\n     '401': {'description': 'Unauthorized'},\n     '403': {'description': 'Forbidden'},\n     '404': {'description': 'Not Found'}}"
+  },
+  "operation_count": 23,
+  "runtime": "not_verified",
+  "warning": "Static checks are not HTTP execution or verified Ground Truth."
+}

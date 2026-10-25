@@ -1,0 +1,50 @@
+[
+  {
+    "method": "GET",
+    "path": "/contacts/{id}",
+    "operation_id": "findContact",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/contacts/{id}",
+    "operation_id": "updateContact",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/contacts/{id}",
+    "operation_id": "deleteContact",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "PATCH",
+    "path": "/contacts/{id}",
+    "operation_id": "updateContact_2_1",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/contacts",
+    "operation_id": "findContacts",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/contacts",
+    "operation_id": "updateContact_1",
+    "declared_statuses": [
+      "200"
+    ]
+  }
+]

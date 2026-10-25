@@ -1,11 +1,32 @@
 # NguyenHieu_OpenAI_DataSet
 
-Dataset OpenAPI — project mẫu đầu tiên.
+Dataset OpenAPI — 20 project đã nhập mã nguồn, phân biệt rõ trạng thái kiểm thử.
 
-Đã thiết lập **API-001-Bookstore**, chạy API thật trên localhost và xác minh **28/28 ca HTTP**.
-Đây là **1 project mẫu**, chưa phải Dataset 20 project. Mã nguồn giữ nguyên từ repository gốc.
+| Trạng thái | Số lượng |
+|---|---:|
+| Project có mã nguồn và hồ sơ trong danh mục | **20** |
+| Project đã kiểm thử HTTP và đối chiếu OpenAPI | **1 — Bookstore, 28/28 ca** |
+| Project WFD mới nhập, chưa build/chạy HTTP trên máy này | **19** |
+
+**Chưa có 20 project đã xác minh.** Trong 19 đặc tả WFD nguyên bản, kiểm tra cấu trúc cho kết quả
+**8 hợp lệ, 11 có lỗi**. Chi tiết ở [báo cáo nhập WFD](results/wfd-import-audit.json).
+Source WFD được giữ tại `sources/WFD`, ghim commit; mỗi project có đường dẫn source riêng trong `project.json`.
+
+## Xem và quản lý 19 project WFD
+
+```powershell
+cd D:\OpenAPI_Dataset
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\dataset.ps1 -Action List
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\dataset.ps1 -Action Audit
+```
+
+Danh sách đầy đủ: [documentation/DATASET_STATUS.md](documentation/DATASET_STATUS.md).
+Hướng dẫn build/chạy từng project bằng Docker: [documentation/WFD.md](documentation/WFD.md).
+Máy nhập dữ liệu chưa có Docker Desktop; script sẽ báo thiếu điều kiện thay vì tạo kết quả kiểm thử giả.
 
 ## Chạy bằng Terminal trong VS Code
+
+Phần này chạy project **API-001-Bookstore** đã được thiết lập sẵn.
 
 Mở thư mục `D:\OpenAPI_Dataset` trong VS Code. Chọn **Terminal → New Terminal**.
 
@@ -70,6 +91,9 @@ Các lần chạy cập nhật bộ bằng chứng hiện tại. `verification.j
 | `documentation/requirements.windows-py312.lock.txt` | Phiên bản đầy đủ đã cài trên Windows/Python 3.12 |
 | `documentation/dataset.csv` | Danh mục project thực có |
 | `documentation/EXPANSION.md` | Quy trình tiếp nhận project thứ 2 đến 20 |
+| `sources/WFD/` | Submodule WFD ghim commit, chứa source và cấu hình upstream |
+| `api_projects/API-002-...` đến `API-020-...` | Hồ sơ và cấu hình build/run riêng cho 19 project WFD |
+| `results/API-002-...` đến `API-020-...` | Đặc tả gốc và kết quả kiểm tra tĩnh; chưa có bằng chứng HTTP |
 
 ## Tái lập trên máy khác
 

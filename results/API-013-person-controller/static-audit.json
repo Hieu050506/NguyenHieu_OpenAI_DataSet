@@ -1,0 +1,15 @@
+{
+  "project_id": "API-013-person-controller",
+  "checked_at_utc": "2026-10-25T17:35:06.712555+00:00",
+  "source_integrity": "pass",
+  "integrity_errors": [],
+  "raw_spec_sha256": "6a627d75dd183b8b336cc243131bf3fd637e6dab935b9029a54c88a2a6e16e7f",
+  "spec_structure": "invalid",
+  "spec_error": {
+    "type": "UnresolvableParameterError",
+    "message": "Path parameter 'ids' for 'get' operation in '/api/persons/{ids}' was not resolved"
+  },
+  "operation_count": 12,
+  "runtime": "not_verified",
+  "warning": "Static checks are not HTTP execution or verified Ground Truth."
+}

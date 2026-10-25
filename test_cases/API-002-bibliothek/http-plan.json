@@ -1,0 +1,17 @@
+{
+  "status": "draft_from_unverified_spec",
+  "project_id": "API-002-bibliothek",
+  "description": "Read-only local smoke candidates, not a complete CRUD or ground-truth test suite. Authenticated routes require explicit test credentials.",
+  "cases": [
+    {
+      "id": "SMOKE-01",
+      "method": "GET",
+      "path": "/v2/projects",
+      "expected_statuses": [
+        200
+      ],
+      "declared_security": [],
+      "executed": false
+    }
+  ]
+}

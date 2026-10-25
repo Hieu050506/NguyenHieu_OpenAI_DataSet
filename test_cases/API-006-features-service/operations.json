@@ -1,0 +1,146 @@
+[
+  {
+    "method": "GET",
+    "path": "/products/{productName}/features",
+    "operation_id": "getFeaturesForProduct",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/products/{productName}/features/{featureName}",
+    "operation_id": "addFeatureToProduct",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/products/{productName}/features/{featureName}",
+    "operation_id": "updateFeatureOfProduct",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/products/{productName}/features/{featureName}",
+    "operation_id": "deleteFeatureOfProduct",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/products/{productName}/configurations/{configurationName}/features/{featureName}",
+    "operation_id": "addFeatureToConfiguration",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/products/{productName}/configurations/{configurationName}/features/{featureName}",
+    "operation_id": "deleteFeature",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/products/{productName}/configurations/{configurationName}/features",
+    "operation_id": "getConfigurationActivedFeatures",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/products/{productName}/configurations",
+    "operation_id": "getConfigurationsForProduct",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/products/{productName}/configurations/{configurationName}",
+    "operation_id": "getConfigurationWithNameForProduct",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/products/{productName}/configurations/{configurationName}",
+    "operation_id": "addConfiguration",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/products/{productName}/configurations/{configurationName}",
+    "operation_id": "deleteConfiguration",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/products/{productName}/constraints/requires",
+    "operation_id": "addRequiresConstraintToProduct",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/products/{productName}/constraints/excludes",
+    "operation_id": "addExcludesConstraintToProduct",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/products/{productName}/constraints/{constraintId}",
+    "operation_id": "deleteConstraint",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/products",
+    "operation_id": "getAllProducts",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/products/{productName}",
+    "operation_id": "getProductByName",
+    "declared_statuses": [
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/products/{productName}",
+    "operation_id": "addProduct",
+    "declared_statuses": [
+      "default"
+    ]
+  },
+  {
+    "method": "DELETE",
+    "path": "/products/{productName}",
+    "operation_id": "deleteProductByName",
+    "declared_statuses": [
+      "default"
+    ]
+  }
+]

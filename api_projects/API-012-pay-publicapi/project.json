@@ -1,0 +1,32 @@
+{
+  "project_id": "API-012-pay-publicapi",
+  "name": "Payments Public API",
+  "slug": "pay-publicapi",
+  "source_url": "https://github.com/alphagov/pay-publicapi",
+  "source_collection": "https://github.com/WebFuzzing/Dataset",
+  "collection_commit": "915859080da033fc36feae54bab3ad4a7b04e872",
+  "source_path": "sources/WFD/jdk_11_maven/cs/rest/pay-publicapi",
+  "source_file_count": 377,
+  "declared_license": "MIT",
+  "license_basis": "WFD README; preserved upstream notices; not a legal review",
+  "license_files": [
+    "sources/WFD/jdk_11_maven/cs/rest/pay-publicapi/LICENSE"
+  ],
+  "language": "Java",
+  "runtime": "JDK 11",
+  "build_tool": "Maven",
+  "database": "Redis",
+  "authentication_declared": "TRUE",
+  "http_port": 8112,
+  "auth_port": 9112,
+  "schema_endpoint_candidates": [
+    "/assets/swagger.json"
+  ],
+  "raw_spec_sha256": "acb5c513e5d9b903621f43e5297086346267e52ed04827f7ca647566720795fc",
+  "raw_spec_version": "3.0.1",
+  "operation_count": 16,
+  "jar_source": "cs/rest/pay-publicapi/target/pay-publicapi-sut.jar",
+  "status": "imported_not_runtime_verified",
+  "raw_spec_hash_normalization": "CRLF to LF; otherwise original bytes",
+  "license_evidence_status": "source_notice_present"
+}

@@ -1,0 +1,40 @@
+services:
+  mitmproxy:
+    image: mitmproxy/mitmproxy:10.2.4
+    user: 0:0
+    environment:
+      MITM_LOG_DIR: /custom-logs
+      MITM_LOG_FILE: ${MITM_LOG_FILE:-minlog.csv}
+    command: "mitmdump \n  --mode reverse:http://sut-familie-ba-sak:8080\n  --listen-host\
+      \ 0.0.0.0\n  --listen-port 8080\n  --set keep_host_header=true\n  -s /addons/minlog.py\n"
+    volumes:
+    - ../../results/API-005-familie-ba-sak/traffic:/custom-logs
+    - ../../sources/WFD/dockerfiles/addons:/addons:ro
+    ports:
+    - 127.0.0.1:8105:8080
+    depends_on:
+    - sut-familie-ba-sak
+  sut-familie-ba-sak:
+    build:
+      dockerfile: ./dockerfiles/familie-ba-sak.dockerfile
+      context: ../../sources/WFD
+    environment:
+      AUTH_PORT: ${AUTH_PORT:-8081}
+  db:
+    image: postgres:13.13
+    tmpfs:
+    - /var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_HOST_AUTH_METHOD: trust
+      POSTGRES_DB: familiebasak
+  mock-oauth2-server:
+    image: ghcr.io/navikt/mock-oauth2-server:2.0.1
+    environment:
+      LOG_LEVEL: verbose
+      SERVER_PORT: ${AUTH_PORT:-8081}
+      JSON_CONFIG_PATH: /app/mockoauth2.json
+    volumes:
+    - ../../sources/WFD/scripts/dockerize/data/additional_files/familie-ba-sak/mockoauth2.json:/app/mockoauth2.json
+    ports:
+    - 127.0.0.1:${AUTH_PORT:-8081}:${AUTH_PORT:-8081}

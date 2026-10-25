@@ -1,0 +1,24 @@
+services:
+  build:
+    build:
+      context: ../../sources/WFD/scripts/build
+      dockerfile: Dockerfile.jdk17
+    working_dir: /build/jdk_17_maven
+    environment:
+      BUILD_EVOMASTER: 'false'
+    volumes:
+    - ../../sources/WFD/jdk_17_maven:/build/jdk_17_maven
+    - ../../sources/WFD/dist:/dist
+    - maven-cache:/root/.m2
+    - gradle-cache:/root/.gradle
+    command:
+    - bash
+    - -lc
+    - 'set -e
+
+      mvn -f cs/pom.xml -pl rest/familie-ba-sak -am install -DskipTests
+
+      cp cs/rest/familie-ba-sak/target/familie-ba-sak-sut.jar /dist/'
+volumes:
+  maven-cache: {}
+  gradle-cache: {}

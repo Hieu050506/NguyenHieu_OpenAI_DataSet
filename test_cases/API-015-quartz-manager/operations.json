@@ -1,0 +1,102 @@
+[
+  {
+    "method": "GET",
+    "path": "/quartz-manager/simple-triggers/{name}",
+    "operation_id": "getSimpleTrigger",
+    "declared_statuses": [
+      "404",
+      "200"
+    ]
+  },
+  {
+    "method": "PUT",
+    "path": "/quartz-manager/simple-triggers/{name}",
+    "operation_id": "rescheduleSimpleTrigger",
+    "declared_statuses": [
+      "404",
+      "200",
+      "400"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/quartz-manager/simple-triggers/{name}",
+    "operation_id": "postSimpleTrigger",
+    "declared_statuses": [
+      "404",
+      "201",
+      "400"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/quartz-manager/triggers",
+    "operation_id": "listTriggers",
+    "declared_statuses": [
+      "404",
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/quartz-manager/scheduler",
+    "operation_id": "getScheduler",
+    "declared_statuses": [
+      "404",
+      "200"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/quartz-manager/scheduler/stop",
+    "operation_id": "stop",
+    "declared_statuses": [
+      "404",
+      "204"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/quartz-manager/scheduler/run",
+    "operation_id": "run",
+    "declared_statuses": [
+      "404",
+      "204"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/quartz-manager/scheduler/resume",
+    "operation_id": "resume",
+    "declared_statuses": [
+      "404",
+      "204"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/quartz-manager/scheduler/pause",
+    "operation_id": "pause",
+    "declared_statuses": [
+      "404",
+      "204"
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/quartz-manager/jobs",
+    "operation_id": "listJobs",
+    "declared_statuses": [
+      "404",
+      "200"
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/quartz-manager/auth/login",
+    "operation_id": "login",
+    "declared_statuses": [
+      "401"
+    ]
+  }
+]
