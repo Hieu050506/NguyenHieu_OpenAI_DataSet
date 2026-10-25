@@ -1,0 +1,2 @@
+project_id,name,source_url,commit,license,framework,database,status,http_cases_passed,http_cases_total,openapi_generated,openapi_curated
+API-001-Bookstore,Book Management API,https://github.com/martcpp/crud-api-fastapi,6888542d376057a82d954d31ec4a962d6f8e1839,MIT,FastAPI 0.111.0,SQLite,verified_with_known_limitations,28,28,3.1.0,3.0.3

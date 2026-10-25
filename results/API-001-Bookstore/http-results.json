@@ -1,0 +1,841 @@
+{
+  "started_at_utc": "2026-10-25T16:53:04.376015+00:00",
+  "upstream_commit": "6888542d376057a82d954d31ec4a962d6f8e1839",
+  "source_sha256": {
+    "src/app.py": "906707d8e62c5f71e942b07ec80445330016e3b6413c0cdf0b040583c92614dc",
+    "src/database.py": "a63aee0fb064879383c5a54fe6bbb0ac544c218af636177b69dbf1a93fab1d3c",
+    "src/models.py": "7f65beef9c2963749113c97544a159bb2683666efa1c1e0b164a9be71ff52a95",
+    "src/schema.py": "a318fc2f8f1e95ca7191b854a56b0cfe6562dfd53666df4a96442c51a284d753",
+    "requirements.txt": "d6064f13d29ee7eb1a46a01698821b75332505e430ba19890d06e1c32ab9b678",
+    "LICENSE": "d17f674b609cb4d2ad64546a3b6f0929cc603b8cdff7fb32d3852cf9036265bf"
+  },
+  "total": 28,
+  "passed": 28,
+  "failed": 0,
+  "generated_openapi_version": "3.1.0",
+  "curated_openapi_version": "3.0.3",
+  "cases": [
+    {
+      "id": "TC01",
+      "description": "Swagger UI is available",
+      "request": {
+        "method": "GET",
+        "path": "/docs"
+      },
+      "expected_status": 200,
+      "response": {
+        "status": 200,
+        "headers": {
+          "date": "Sun, 25 Oct 2026 16:53:06 GMT",
+          "server": "uvicorn",
+          "content-length": "939",
+          "content-type": "text/html; charset=utf-8"
+        },
+        "body": "\n    <!DOCTYPE html>\n    <html>\n    <head>\n    <link type=\"text/css\" rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.9.0/swagger-ui.css\">\n    <link rel=\"shortcut icon\" href=\"https://fastapi.tiangolo.com/img/favicon.png\">\n    <title>FastAPI - Swagger UI</title>\n    </head>\n    <body>\n    <div id=\"swagger-ui\">\n    </div>\n    <script src=\"https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.9.0/swagger-ui-bundle.js\"></script>\n    <!-- `SwaggerUIBundle` is now available on the page -->\n    <script>\n    const ui = SwaggerUIBundle({\n        url: '/openapi.json',\n    \"dom_id\": \"#swagger-ui\",\n\"layout\": \"BaseLayout\",\n\"deepLinking\": true,\n\"showExtensions\": true,\n\"showCommonExtensions\": true,\noauth2RedirectUrl: window.location.origin + '/docs/oauth2-redirect',\n    presets: [\n        SwaggerUIBundle.presets.apis,\n        SwaggerUIBundle.SwaggerUIStandalonePreset\n        ],\n    })\n    </script>\n    </body>\n    </html>\n    "
+      },
+      "passed": true
+    },
+    {
+      "id": "TC02",
+      "description": "Empty database returns []",
+      "request": {
+        "method": "GET",
+        "path": "/books/"
+      },
+      "expected_status": 200,
+      "response": {
+        "status": 200,
+        "headers": {
+          "date": "Sun, 25 Oct 2026 16:53:06 GMT",
+          "server": "uvicorn",
+          "content-length": "2",
+          "content-type": "application/json"
+        },
+        "body": []
+      },
+      "response_schema_valid": true,
+      "passed": true
+    },
+    {
+      "id": "TC03",
+      "description": "Read missing book",
+      "request": {
+        "method": "GET",
+        "path": "/books/999999"
+      },
+      "expected_status": 404,
+      "response": {
+        "status": 404,
+        "headers": {
+          "date": "Sun, 25 Oct 2026 16:53:06 GMT",
+          "server": "uvicorn",
+          "content-length": "27",
+          "content-type": "application/json"
+        },
+        "body": {
+          "detail": "Book not found"
+        }
+      },
+      "response_schema_valid": true,
+      "passed": true
+    },
+    {
+      "id": "TC04",
+      "description": "Update missing book",
+      "request": {
+        "method": "PUT",
+        "path": "/books/999999",
+        "json": {
+          "title": "Missing",
+          "author": "Test",
+          "year": 2024,
+          "isbn": "test"
+        }
+      },
+      "expected_status": 404,
+      "response": {
+        "status": 404,
+        "headers": {
+          "date": "Sun, 25 Oct 2026 16:53:06 GMT",
+          "server": "uvicorn",
+          "content-length": "27",
+          "content-type": "application/json"
+        },
+        "body": {
+          "detail": "Book not found"
+        }
+      },
+      "response_schema_valid": true,
+      "passed": true
+    },
+    {
+      "id": "TC05",
+      "description": "Delete missing book",
+      "request": {
+        "method": "DELETE",
+        "path": "/books/999999"
+      },
+      "expected_status": 404,
+      "response": {
+        "status": 404,
+        "headers": {
+          "date": "Sun, 25 Oct 2026 16:53:06 GMT",
+          "server": "uvicorn",
+          "content-length": "27",
+          "content-type": "application/json"
+        },
+        "body": {
+          "detail": "Book not found"
+        }
+      },
+      "response_schema_valid": true,
+      "passed": true
+    },
+    {
+      "id": "TC06",
+      "description": "Reject empty request body object",
+      "request": {
+        "method": "POST",
+        "path": "/books/",
+        "json": {}
+      },
+      "expected_status": 422,
+      "response": {
+        "status": 422,
+        "headers": {
+          "date": "Sun, 25 Oct 2026 16:53:06 GMT",
+          "server": "uvicorn",
+          "content-length": "315",
+          "content-type": "application/json"
+        },
+        "body": {
+          "detail": [
+            {
+              "type": "missing",
+              "loc": [
+                "body",
+                "title"
+              ],
+              "msg": "Field required",
+              "input": {}
+            },
+            {
+              "type": "missing",
+              "loc": [
+                "body",
+                "author"
+              ],
+              "msg": "Field required",
+              "input": {}
+            },
+            {
+              "type": "missing",
+              "loc": [
+                "body",
+                "year"
+              ],
+              "msg": "Field required",
+              "input": {}
+            },
+            {
+              "type": "missing",
+              "loc": [
+                "body",
+                "isbn"
+              ],
+              "msg": "Field required",
+              "input": {}
+            }
+          ]
+        }
+      },
+      "response_schema_valid": true,
+      "passed": true
+    },
+    {
+      "id": "TC07",
+      "description": "Reject nonnumeric year",
+      "request": {
+        "method": "POST",
+        "path": "/books/",
+        "json": {
+          "title": "Test",
+          "author": "Test",
+          "year": "wrong",
+          "isbn": "test"
+        }
+      },
+      "expected_status": 422,
+      "response": {
+        "status": 422,
+        "headers": {
+          "date": "Sun, 25 Oct 2026 16:53:06 GMT",
+          "server": "uvicorn",
+          "content-length": "151",
+          "content-type": "application/json"
+        },
+        "body": {
+          "detail": [
+            {
+              "type": "int_parsing",
+              "loc": [
+                "body",
+                "year"
+              ],
+              "msg": "Input should be a valid integer, unable to parse string as an integer",
+              "input": "wrong"
+            }
+          ]
+        }
+      },
+      "response_schema_valid": true,
+      "passed": true
+    },
+    {
+      "id": "TC08",
+      "description": "Reject missing title",
+      "request": {
+        "method": "POST",
+        "path": "/books/",
+        "json": {
+          "author": "Test",
+          "year": 2024,
+          "isbn": "test"
+        }
+      },
+      "expected_status": 422,
+      "response": {
+        "status": 422,
+        "headers": {
+          "date": "Sun, 25 Oct 2026 16:53:06 GMT",
+          "server": "uvicorn",
+          "content-length": "129",
+          "content-type": "application/json"
+        },
+        "body": {
+          "detail": [
+            {
+              "type": "missing",
+              "loc": [
+                "body",
+                "title"
+              ],
+              "msg": "Field required",
+              "input": {
+                "author": "Test",
+                "year": 2024,
+                "isbn": "test"
+              }
+            }
+          ]
+        }
+      },
+      "response_schema_valid": true,
+      "passed": true
+    },
+    {
+      "id": "TC09",
+      "description": "Reject null title",
+      "request": {
+        "method": "POST",
+        "path": "/books/",
+        "json": {
+          "title": null,
+          "author": "Test",
+          "year": 2024,
+          "isbn": "test"
+        }
+      },
+      "expected_status": 422,
+      "response": {
+        "status": 422,
+        "headers": {
+          "date": "Sun, 25 Oct 2026 16:53:06 GMT",
+          "server": "uvicorn",
+          "content-length": "110",
+          "content-type": "application/json"
+        },
+        "body": {
+          "detail": [
+            {
+              "type": "string_type",
+              "loc": [
+                "body",
+                "title"
+              ],
+              "msg": "Input should be a valid string",
+              "input": null
+            }
+          ]
+        }
+      },
+      "response_schema_valid": true,
+      "passed": true
+    },
+    {
+      "id": "TC10",
+      "description": "Reject noninteger path ID",
+      "request": {
+        "method": "GET",
+        "path": "/books/abc"
+      },
+      "expected_status": 422,
+      "response": {
+        "status": 422,
+        "headers": {
+          "date": "Sun, 25 Oct 2026 16:53:06 GMT",
+          "server": "uvicorn",
+          "content-length": "152",
+          "content-type": "application/json"
+        },
+        "body": {
+          "detail": [
+            {
+              "type": "int_parsing",
+              "loc": [
+                "path",
+                "book_id"
+              ],
+              "msg": "Input should be a valid integer, unable to parse string as an integer",
+              "input": "abc"
+            }
+          ]
+        }
+      },
+      "response_schema_valid": true,
+      "passed": true
+    },
+    {
+      "id": "TC11",
+      "description": "Reject malformed JSON",
+      "request": {
+        "method": "POST",
+        "path": "/books/",
+        "content": "{broken",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "expected_status": 422,
+      "response": {
+        "status": 422,
+        "headers": {
+          "date": "Sun, 25 Oct 2026 16:53:06 GMT",
+          "server": "uvicorn",
+          "content-length": "158",
+          "content-type": "application/json"
+        },
+        "body": {
+          "detail": [
+            {
+              "type": "json_invalid",
+              "loc": [
+                "body",
+                1
+              ],
+              "msg": "JSON decode error",
+              "input": {},
+              "ctx": {
+                "error": "Expecting property name enclosed in double quotes"
+              }
+            }
+          ]
+        }
+      },
+      "response_schema_valid": true,
+      "passed": true
+    },
+    {
+      "id": "TC12",
+      "description": "Create book with nested returned ID",
+      "request": {
+        "method": "POST",
+        "path": "/books/",
+        "json": {
+          "title": "Dataset Book",
+          "author": "Test Author",
+          "year": 2024,
+          "isbn": "dataset-test-isbn"
+        }
+      },
+      "expected_status": 201,
+      "response": {
+        "status": 201,
+        "headers": {
+          "date": "Sun, 25 Oct 2026 16:53:06 GMT",
+          "server": "uvicorn",
+          "content-length": "140",
+          "content-type": "application/json"
+        },
+        "body": {
+          "message": "Book created successfully",
+          "data": {
+            "isbn": "dataset-test-isbn",
+            "year": 2024,
+            "author": "Test Author",
+            "id": 1,
+            "title": "Dataset Book"
+          }
+        }
+      },
+      "response_schema_valid": true,
+      "passed": true
+    },
+    {
+      "id": "TC13",
+      "description": "Created book appears in list",
+      "request": {
+        "method": "GET",
+        "path": "/books/"
+      },
+      "expected_status": 200,
+      "response": {
+        "status": 200,
+        "headers": {
+          "date": "Sun, 25 Oct 2026 16:53:06 GMT",
+          "server": "uvicorn",
+          "content-length": "95",
+          "content-type": "application/json"
+        },
+        "body": [
+          {
+            "id": 1,
+            "title": "Dataset Book",
+            "author": "Test Author",
+            "year": 2024,
+            "isbn": "dataset-test-isbn"
+          }
+        ]
+      },
+      "response_schema_valid": true,
+      "passed": true
+    },
+    {
+      "id": "TC14",
+      "description": "Read created book",
+      "request": {
+        "method": "GET",
+        "path": "/books/1"
+      },
+      "expected_status": 200,
+      "response": {
+        "status": 200,
+        "headers": {
+          "date": "Sun, 25 Oct 2026 16:53:06 GMT",
+          "server": "uvicorn",
+          "content-length": "93",
+          "content-type": "application/json"
+        },
+        "body": {
+          "id": 1,
+          "title": "Dataset Book",
+          "author": "Test Author",
+          "year": 2024,
+          "isbn": "dataset-test-isbn"
+        }
+      },
+      "response_schema_valid": true,
+      "passed": true
+    },
+    {
+      "id": "TC15",
+      "description": "Update returns empty data object (known upstream defect)",
+      "request": {
+        "method": "PUT",
+        "path": "/books/1",
+        "json": {
+          "title": "Updated Book",
+          "author": "Updated Author",
+          "year": 2025,
+          "isbn": "dataset-test-isbn"
+        }
+      },
+      "expected_status": 200,
+      "response": {
+        "status": 200,
+        "headers": {
+          "date": "Sun, 25 Oct 2026 16:53:06 GMT",
+          "server": "uvicorn",
+          "content-length": "49",
+          "content-type": "application/json"
+        },
+        "body": {
+          "message": "Book updated successfully",
+          "data": {}
+        }
+      },
+      "response_schema_valid": true,
+      "passed": true
+    },
+    {
+      "id": "TC16",
+      "description": "Read confirms update was persisted",
+      "request": {
+        "method": "GET",
+        "path": "/books/1"
+      },
+      "expected_status": 200,
+      "response": {
+        "status": 200,
+        "headers": {
+          "date": "Sun, 25 Oct 2026 16:53:06 GMT",
+          "server": "uvicorn",
+          "content-length": "96",
+          "content-type": "application/json"
+        },
+        "body": {
+          "id": 1,
+          "title": "Updated Book",
+          "author": "Updated Author",
+          "year": 2025,
+          "isbn": "dataset-test-isbn"
+        }
+      },
+      "response_schema_valid": true,
+      "passed": true
+    },
+    {
+      "id": "TC17",
+      "description": "Duplicate ISBN accepted (not unique in source)",
+      "request": {
+        "method": "POST",
+        "path": "/books/",
+        "json": {
+          "title": "Duplicate ISBN",
+          "author": "Test",
+          "year": 2024,
+          "isbn": "dataset-test-isbn"
+        }
+      },
+      "expected_status": 201,
+      "response": {
+        "status": 201,
+        "headers": {
+          "date": "Sun, 25 Oct 2026 16:53:06 GMT",
+          "server": "uvicorn",
+          "content-length": "135",
+          "content-type": "application/json"
+        },
+        "body": {
+          "message": "Book created successfully",
+          "data": {
+            "isbn": "dataset-test-isbn",
+            "year": 2024,
+            "author": "Test",
+            "id": 2,
+            "title": "Duplicate ISBN"
+          }
+        }
+      },
+      "response_schema_valid": true,
+      "passed": true
+    },
+    {
+      "id": "TC18",
+      "description": "List contains two books",
+      "request": {
+        "method": "GET",
+        "path": "/books/"
+      },
+      "expected_status": 200,
+      "response": {
+        "status": 200,
+        "headers": {
+          "date": "Sun, 25 Oct 2026 16:53:06 GMT",
+          "server": "uvicorn",
+          "content-length": "187",
+          "content-type": "application/json"
+        },
+        "body": [
+          {
+            "id": 1,
+            "title": "Updated Book",
+            "author": "Updated Author",
+            "year": 2025,
+            "isbn": "dataset-test-isbn"
+          },
+          {
+            "id": 2,
+            "title": "Duplicate ISBN",
+            "author": "Test",
+            "year": 2024,
+            "isbn": "dataset-test-isbn"
+          }
+        ]
+      },
+      "response_schema_valid": true,
+      "passed": true
+    },
+    {
+      "id": "TC19",
+      "description": "Delete second book",
+      "request": {
+        "method": "DELETE",
+        "path": "/books/2"
+      },
+      "expected_status": 200,
+      "response": {
+        "status": 200,
+        "headers": {
+          "date": "Sun, 25 Oct 2026 16:53:06 GMT",
+          "server": "uvicorn",
+          "content-length": "39",
+          "content-type": "application/json"
+        },
+        "body": {
+          "message": "Book deleted successfully"
+        }
+      },
+      "response_schema_valid": true,
+      "passed": true
+    },
+    {
+      "id": "TC20",
+      "description": "Delete first book",
+      "request": {
+        "method": "DELETE",
+        "path": "/books/1"
+      },
+      "expected_status": 200,
+      "response": {
+        "status": 200,
+        "headers": {
+          "date": "Sun, 25 Oct 2026 16:53:06 GMT",
+          "server": "uvicorn",
+          "content-length": "39",
+          "content-type": "application/json"
+        },
+        "body": {
+          "message": "Book deleted successfully"
+        }
+      },
+      "response_schema_valid": true,
+      "passed": true
+    },
+    {
+      "id": "TC21",
+      "description": "Read deleted book returns 404",
+      "request": {
+        "method": "GET",
+        "path": "/books/1"
+      },
+      "expected_status": 404,
+      "response": {
+        "status": 404,
+        "headers": {
+          "date": "Sun, 25 Oct 2026 16:53:06 GMT",
+          "server": "uvicorn",
+          "content-length": "27",
+          "content-type": "application/json"
+        },
+        "body": {
+          "detail": "Book not found"
+        }
+      },
+      "response_schema_valid": true,
+      "passed": true
+    },
+    {
+      "id": "TC22",
+      "description": "Update deleted book returns 404",
+      "request": {
+        "method": "PUT",
+        "path": "/books/1",
+        "json": {
+          "title": "Gone",
+          "author": "Test",
+          "year": 2024,
+          "isbn": "test"
+        }
+      },
+      "expected_status": 404,
+      "response": {
+        "status": 404,
+        "headers": {
+          "date": "Sun, 25 Oct 2026 16:53:06 GMT",
+          "server": "uvicorn",
+          "content-length": "27",
+          "content-type": "application/json"
+        },
+        "body": {
+          "detail": "Book not found"
+        }
+      },
+      "response_schema_valid": true,
+      "passed": true
+    },
+    {
+      "id": "TC23",
+      "description": "Delete deleted book returns 404",
+      "request": {
+        "method": "DELETE",
+        "path": "/books/1"
+      },
+      "expected_status": 404,
+      "response": {
+        "status": 404,
+        "headers": {
+          "date": "Sun, 25 Oct 2026 16:53:06 GMT",
+          "server": "uvicorn",
+          "content-length": "27",
+          "content-type": "application/json"
+        },
+        "body": {
+          "detail": "Book not found"
+        }
+      },
+      "response_schema_valid": true,
+      "passed": true
+    },
+    {
+      "id": "TC24",
+      "description": "CRUD cleanup leaves empty list",
+      "request": {
+        "method": "GET",
+        "path": "/books/"
+      },
+      "expected_status": 200,
+      "response": {
+        "status": 200,
+        "headers": {
+          "date": "Sun, 25 Oct 2026 16:53:06 GMT",
+          "server": "uvicorn",
+          "content-length": "2",
+          "content-type": "application/json"
+        },
+        "body": []
+      },
+      "response_schema_valid": true,
+      "passed": true
+    },
+    {
+      "id": "TC25",
+      "description": "Missing trailing slash redirects",
+      "request": {
+        "method": "GET",
+        "path": "/books"
+      },
+      "expected_status": 307,
+      "response": {
+        "status": 307,
+        "headers": {
+          "date": "Sun, 25 Oct 2026 16:53:06 GMT",
+          "server": "uvicorn",
+          "content-length": "0",
+          "location": "http://127.0.0.1:57299/books/"
+        },
+        "body": ""
+      },
+      "passed": true
+    },
+    {
+      "id": "TC26",
+      "description": "PATCH is not implemented",
+      "request": {
+        "method": "PATCH",
+        "path": "/books/1",
+        "json": {}
+      },
+      "expected_status": 405,
+      "response": {
+        "status": 405,
+        "headers": {
+          "date": "Sun, 25 Oct 2026 16:53:06 GMT",
+          "server": "uvicorn",
+          "allow": "GET",
+          "content-length": "31",
+          "content-type": "application/json"
+        },
+        "body": {
+          "detail": "Method Not Allowed"
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "TC27",
+      "description": "Unknown route returns 404",
+      "request": {
+        "method": "GET",
+        "path": "/unknown-route"
+      },
+      "expected_status": 404,
+      "response": {
+        "status": 404,
+        "headers": {
+          "date": "Sun, 25 Oct 2026 16:53:06 GMT",
+          "server": "uvicorn",
+          "content-length": "22",
+          "content-type": "application/json"
+        },
+        "body": {
+          "detail": "Not Found"
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "TC28",
+      "description": "Negative ID is accepted as integer then not found",
+      "request": {
+        "method": "GET",
+        "path": "/books/-1"
+      },
+      "expected_status": 404,
+      "response": {
+        "status": 404,
+        "headers": {
+          "date": "Sun, 25 Oct 2026 16:53:06 GMT",
+          "server": "uvicorn",
+          "content-length": "27",
+          "content-type": "application/json"
+        },
+        "body": {
+          "detail": "Book not found"
+        }
+      },
+      "response_schema_valid": true,
+      "passed": true
+    }
+  ]
+}

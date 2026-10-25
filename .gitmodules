@@ -1,0 +1,3 @@
+[submodule "api_projects/API-001-Bookstore"]
+	path = api_projects/API-001-Bookstore
+	url = https://github.com/martcpp/crud-api-fastapi.git

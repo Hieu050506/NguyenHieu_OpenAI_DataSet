@@ -1,0 +1,12 @@
+{
+  "status": "verified_with_known_limitations",
+  "commit": "6888542d376057a82d954d31ec4a962d6f8e1839",
+  "verified_at_utc": "2026-10-25T16:53:04.376015+00:00",
+  "passed": 28,
+  "total": 28,
+  "limitations": [
+    "PUT returns an empty data object",
+    "No exhaustive or security verification",
+    "Pinned upstream dependency versions are not a production recommendation"
+  ]
+}
